@@ -59,6 +59,13 @@ form input[type=submit]{
     background-color: rgb(79, 27, 128);
     color: white;
     font-size: 20px;
+    border:2px solid rgb(79, 27, 128);
+}
+
+form input[type=submit]:hover{
+    
+    background-color:rgb(46, 17, 73);
+    transition:1s;
 }
 
 input{
