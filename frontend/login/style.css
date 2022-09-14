@@ -3,32 +3,68 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-
-main{
-    width: 100vw;
-    height: 100vh;
-    background-color: #000000;
-}
-
-main .container-login{
-
-    width: 90%;
-    height: 80%;
-    background-color: #212020;
-    position: relative;
-    left:50%;
-    top: 50%;
-    translate: -50% -50%;
-    display:flex
-}
-
-main .container-login #card{
-
+body{
     width:100%;
-    height: 100%;
-    background-color: white;
-    border: 2px solid black;
+    height: 100vh;
     
 }
+
+
+form{
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left:50%; 
+    translate: -50% -50%;
+}
+
+form h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+form input[type=text],
+form input[type=password]{
+
+    width:100%;
+    height: 45px;
+    border: 2px solid #ccc;
+    padding-left:10px;
+    
+}
+
+form input[type=text]{
+    
+    background-image: url('imagens/avatar-login.png.crdownload');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 97% ;
+}
+
+
+form input[type=password]{
+    
+    background-image: url('imagens/cadeado.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 97% ;
+}
+
+form input[type=submit]{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(79, 27, 128);
+    color: white;
+    font-size: 20px;
+}
+
+input{
+    margin: 10px 0;
+}
+
+
+
+
