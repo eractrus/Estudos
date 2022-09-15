@@ -4,6 +4,7 @@
     padding:0;
     box-sizing: border-box;
     font-family: sans-serif;
+    list-style: none;
 }
 
 body{
@@ -38,7 +39,7 @@ form input[type=password]{
 
 form input[type=text]{
     
-    background-image: url('imagens/avatar-login.png.crdownload');
+    background-image: url('imagens/User-avatar.svg.png');
     background-repeat: no-repeat;
     background-size: 20px;
     background-position: 97% ;
@@ -60,12 +61,14 @@ form input[type=submit]{
     color: white;
     font-size: 20px;
     border:2px solid rgb(79, 27, 128);
+    margin-bottom: 20px;
 }
 
 form input[type=submit]:hover{
     
     background-color:rgb(46, 17, 73);
     transition:1s;
+    cursor: pointer;
 }
 
 input{
@@ -73,5 +76,27 @@ input{
 }
 
 
+form .midias{
+    width:100%;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+form .midias a{
+    color:rgb(79, 27, 128);
+    font-size: 26px;
+}
+
+form .esqueci a:hover{
+    text-decoration: none;
+    color: darkgrey;
+}
+
+.esqueci a{
+    font-size: 13px;
+    margin-top: 10px;
+}
 
 
