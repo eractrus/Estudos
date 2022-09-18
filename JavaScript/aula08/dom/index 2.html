@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <style>
+        div#a1,#a2,#a3{
+            font: normal 20pt arial;
+            background-color: green;
+            color:#fff;
+            width: 200px;
+            height: 200px;
+            line-height:200px;
+            text-align:center;
+            cursor: pointer;
+            border: 2px solid black;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+
+    Quantos anos Eractrus tem ?
+
+
+    <div id="a1" onclick="clique1()" onmouseenter="entrou1()" onmouseout="saiu1()">
+        25 anos
+    </div>
+    <div id="a2" onclick="clique2()" onmouseenter="entrou2()" onmouseout="saiu2()">
+        32 anos
+    </div>
+    <div id="a3" onclick="clique3()" onmouseenter="entrou3()" onmouseout="saiu3()">
+        26 anos
+    </div>
+
+
+    <script>
+
+        
+
+        var a1 = window.document.getElementById('a1')
+        var a2 = window.document.getElementById('a2')
+        var a3 = window.document.getElementById('a3')
+
+        function clique1() {
+          
+            window.alert('Você errou')
+        }
+        function entrou1(){
+            a1.style.background = 'red'
+        }
+        function saiu1(){
+            a1.style.background = 'green'
+        }
+
+
+
+        function clique2(){
+           
+            window.alert('Você errou')
+        }
+        function entrou2(){
+            a2.style.background = 'red'
+        }
+        function saiu2(){
+            a2.style.background = 'green'
+        }
+
+
+
+
+
+        function clique3(){
+            
+            window.alert('Você acertou')
+            
+        }
+        function entrou3(){
+            a3.style.background = 'red'
+        }
+        function saiu3(){
+            a3.style.background = 'green'
+        }
+
+
+
+
+        
+
+    
+
+    
+
+       
+
+    </script>
+    
+</body>
+</html>
