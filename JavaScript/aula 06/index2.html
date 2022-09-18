@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de string</title>
+
+    <style>
+        body{
+            text-align: center;
+            color: white;
+            background-color: black;
+        }
+
+        p{
+            width: 400px;
+            padding:10px 0 ; 
+            margin: auto;
+            text-align:justify;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Olá mundo !</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab possimus adipisci totam voluptate, rem iure odit fugiat, eos sed aut veniam at molestias perspiciatis, delectus quo aliquid accusantium eaque dolorem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi amet voluptates magni, sed delectus architecto? Ea, aliquam omnis! Ad facere iure cum distinctio, ducimus debitis beatae corrupti excepturi libero aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis sequi eos dolorum voluptatibus accusantium repellendus alias cumque magnam! Unde dicta eligendi laudantium soluta ipsa ad adipisci quas. Accusamus, provident earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos cumque obcaecati molestiae quibusdam! Voluptates dicta qui dolorum aliquam nesciunt, sit explicabo distinctio tempore, unde inventore nobis voluptatem eius alias molestias. </p>
+    
+    <script>
+
+        var nota1 = Number(window.prompt('Digite sua primeira nota'))// ENTRADA DE NOTA 1 / parseFloat faz a conversão dos dados de string para número
+
+        var nota2 = Number(window.prompt('Digite sua segunda nota')) // ENTRADA DE NOTA 2 / parseFloat faz a conversão dos dados de string para número
+
+       /* var media = Number.((nota1 + nota2)/2) // Média dos valores recebidos acima*/
+
+       var soma = nota1 + nota2 // soma dos valores acima
+
+        window.alert(`A soma entre ${nota1} e ${nota2} é ${soma}`) // Template string
+
+
+        /* Conversão de variáveis 
+
+        Number.parseFloat - conversão de string para números flutuantes
+        Number.parseInt - conversão de string para números inteiros
+
+        Number - conersão de string para número em geral int, float
+
+
+        string(n) - converte de número para string
+        n.toString() - converte de número para estring
+
+        */
+
+        /* Concatenação
+
+        Podemos utilizar o sinal de '+' para fazer uma concatenação 
+        ex:
+            var nome = 'Eractrus'
+            'Olá ' + nome + ' seja bem - vindo'
+
+            Olá Eractrus seja bem - vindo
+
+
+        Podemos utilizar '${}' para fazer uma concatenação direta
+        ex:
+            var nome = 'Eractrus'
+            'Olá ${} seja bem - vindo'
+
+            Olá Eractrus seja bem - vindo
+
+
+        */
+    
+
+    </script>
+</body>
+</html>

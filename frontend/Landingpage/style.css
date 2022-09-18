@@ -19,10 +19,7 @@ body{
     height: 100vh; 
 
     overflow: hidden;
-    background-image: url('imagens/imagem1.jpg');
-    background-repeat: no-repeat;
-    background-position: center right;
-    background-size: contain;
+   
 }
 
 /* Início do header */
@@ -48,10 +45,14 @@ header nav{
 header nav a{
     text-decoration: none;
     color:black;
+    padding: 8px 15px;
 }
 
 header nav a:hover{
-    text-decoration: underline;
+    border-bottom: 3px solid rebeccapurple;
+    color:rebeccapurple;
+    transition: .8s;
+
 }
 
 header nav #btn-contato{
@@ -82,6 +83,10 @@ header nav #btn-contato:hover{
     display: flex;
     padding: 0 2%;
     justify-content: space-between;
+    background-image: url('imagens/imagem1.jpg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
 }
 
 .container-geral .texto{
