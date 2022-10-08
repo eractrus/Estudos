@@ -57,10 +57,22 @@ int main(int argc, char** argv) {
 	printf("\n \n Valor para investir = %f", investimentos);
 	printf("\n \n Valor para estudos = %f", estudos);
 	printf("\n \n Valor para lazer = %f", lazer);
-	printf("\n \n Valor final da sua renda = %f", renda_final);
+	printf("\n \n Valor final da sua renda = %f \n", renda_final);
 	
 	// fim do resultado 
 	
+	// MENSAGEM SOBRE O RESTO DA RENDA
+	
+	if ( renda_final > 0 )
+	{
+		
+		printf("\n Parabens sua vida financeira este BOA ! \n");
+	}
+	
+	else 
+	{
+		printf("\n Seus gastos estao maiores que sua renda \n");
+	}
 	
 	
 	
