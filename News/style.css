@@ -20,6 +20,9 @@
 
 /* logo */
 
+
+
+
 header{
     width: 100%;
     display: flex;
@@ -33,11 +36,24 @@ header .logo{
     margin-left: 50px;
 }
 header img{
-    width: 150px;
+    width: 100px;
 }
 
 
 /* menu */
+
+header .checkbtn {
+    margin-left: auto;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+header #check{
+    display: none;
+   
+}
+
 
 header #home, #lifesaver, #comunicado, #contato{
     color: var(--corcontraste);
