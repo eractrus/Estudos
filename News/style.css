@@ -284,6 +284,60 @@ header nav a:hover{
     
 }
 
+
+/* tela de login */
+
+#body-login .container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--corprincipal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#body-login .container form{
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 0 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+#body-login .container form input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--corprincipal);
+    padding-left: 2%;
+}
+
+#body-login input[type=submit]{
+    background-color: var(--corcontraste);
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+
+}
+
+#body-login input[type=submit]:hover{
+    background-color: var(--corprincipal);
+}
+
+#body-login a{
+    text-align: center;
+    color: var(--corcontraste);
+}
+
+#body-login a:hover{
+    color: var(--corprincipal);
+}
+
 /* seção footer  geral*/
 
 footer{
