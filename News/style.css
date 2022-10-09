@@ -82,6 +82,91 @@ header nav a:hover{
 
 /* Main home */
 
+#body-home main {
+    width: 100%;
+
+}
+
+#body-home main .slide{
+
+    max-width: 700px;
+    height: 70vh;
+    margin: 0 auto;
+    padding: 0 2%;
+    background-color:var(--corcontraste);
+    animation-name: slide;
+    animation-duration: 30s;
+    animation-direction:alternate ;
+    animation-iteration-count: infinite;
+}
+
+/* efeito do slide */
+
+@keyframes slide{
+
+    0%{
+        background-image: url('https://www.lifesaver.com.br/img/portfolios/oftalmico/oftalmo01.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    25%{
+        background-image: url('https://www.lifesaver.com.br/img/portfolios/kits/cesarea.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    50%{
+        background-image: url('https://www.lifesaver.com.br/img/portfolios/kits/ombro.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    75%{
+        background-image: url('https://www.lifesaver.com.br/img/portfolios/kits/universal_lp03.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    100%{
+        background-image: url('https://www.lifesaver.com.br/img/portfolios/kits/pe.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+} /* fim do @keyframe */
+
+#body-home main .container{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+#body-home main .bloco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    max-width: 600px;
+    height: 300px;
+}
+
+#body-home main .bloco p{
+    width: 100%;
+    text-align: justify;
+    font-size: .9em;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
 /* main Lifesaver */
 
 
@@ -101,7 +186,7 @@ header nav a:hover{
 #body-lifesaver main .conteudo{
     max-width: 700px;
     margin: 0 auto;
-
+    padding: 0 2%;
 }
 
 #body-lifesaver main  .titulo{
@@ -123,7 +208,7 @@ header nav a:hover{
     justify-content: space-between;
     max-width: 700px;
     margin: 30px auto;
-    padding: 10px;
+    padding: 0 2%;
     flex-wrap: wrap;
     background-color: var(--corcontraste);
 
@@ -145,6 +230,7 @@ header nav a:hover{
 #body-lifesaver main .politica{
     max-width: 700px;
     margin: 20px auto;
+    padding: 0 2%;
 }
 
 /* body lifesaver seção footer */

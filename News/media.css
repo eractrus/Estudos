@@ -13,6 +13,8 @@
     --corneutra:rgb(133, 133, 133);
 }
 
+/* menu responsivo */
+
 @media (max-width:847px){
 
     header .checkbtn{
@@ -52,8 +54,9 @@
 
     #check:checked ~ nav{
         top: 80px;
+        transition: 1s;
     }
-
-
- 
 }
+
+/* fim do menu responsio */
+
