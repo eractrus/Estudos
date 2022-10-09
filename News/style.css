@@ -13,7 +13,10 @@
 :root{
     --corprincipal:#7aafd6;
     --corcontraste:#314a7e;
+    --corneutra:rgb(133, 133, 133);
 }
+
+
 
 /* logo */
 
@@ -23,6 +26,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 0px;
+    flex-wrap: wrap;
 }
 
 header .logo{
@@ -35,23 +39,110 @@ header img{
 
 /* menu */
 
+header #home, #lifesaver, #comunicado, #contato{
+    color: var(--corcontraste);
+    border-bottom: 2px solid var(--corcontraste);
+}
+
 header nav{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-right: 50px;
+    gap: 20px;
 }
 
 header nav a{
-    margin: 0 20px;
     text-decoration: none;
     color: var(--corprincipal);
     border-bottom: 2px solid transparent;
+    padding: 8px 16px;
 }
 
 header nav a:hover{
     color: var(--corcontraste);
     border-bottom: 2px solid var(--corcontraste);
+    transition: .9s;
 }
+
+/* Main home */
+
+/* main Lifesaver */
+
+
+#body-lifesaver main .sobre{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: var(--corcontraste);
+    color: white;
+    line-height: 50px;
+}
+
+#body-lifesaver main .sobre h1{
+    margin-left: 50px;
+}
+
+#body-lifesaver main .conteudo{
+    max-width: 700px;
+    margin: 0 auto;
+
+}
+
+#body-lifesaver main  .titulo{
+    color: var(--corprincipal);
+    margin-bottom: 20px;
+}
+
+#body-lifesaver main .texto{
+    color: var(--corneutra);
+    line-height: 30px;
+    font-size: .9em;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#body-lifesaver main .missao{
+
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 10px;
+    flex-wrap: wrap;
+    background-color: var(--corcontraste);
+
+}
+
+#body-lifesaver main .missao .coluna-texto{
+    color: white;
+    margin: 20px auto;
+    font-size: .9em;
+    max-width: 250px;
+    text-align: justify;
+}
+
+#body-lifesaver main .missao .coluna-texto h4{
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+#body-lifesaver main .politica{
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+/* body lifesaver seção footer */
+
+footer{
+    background-color: var(--corcontraste);
+    text-align: center;
+    color: var(--corneutra);
+    width: 100%;
+    min-height: 40px;
+    line-height: 40px;
+}
+
+
 
 
 
