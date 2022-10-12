@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* pré-definições */
+
+:root{
+    --corprincipal:#0A0A0A;
+    --cordestaque1:#ff7d00;
+    --cordestaque2:#4169E1;
+    --corneutra1:#E6E6E9;
+    --corneutra2:#fcfcfc;
+}
+
+
+
+
+/* contnainer principal*/
+
+.container-principal {
+    width: 100%;
+    height:calc(100vh - 55px);
+    background-color: var(--corprincipal);
+    display: flex;
+    
+}
+
+/* fim do container principal */
+
+
+
+
+/* header */ 
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: #4169E1;
+}
+
+ input[type=checkbox]{
+    display: none;
+}
+
+ label{
+    color: var(--corneutra2);
+    font-size: 25px;
+    margin-left: 20px;
+    line-height: 50px;
+    cursor: pointer;
+    
+ }
+
+
+/* fim do header */
+
+
+
+
+
+/* menu */ 
+
+#planejamento,#visaogeral,#indicadores,#estoque,#pedidos{
+    background-color: var(--cordestaque2);
+    color: var(--corneutra2);
+}
+
+.container-principal .menu{
+    width: 300px;
+    height: 100%;
+    background-color: var(--corprincipal);
+    display: block;
+}
+
+.menu .logo{
+    width: 150px;
+    height: 150px;
+    margin: 30px auto 0px auto;
+    background-color: white;
+    border-radius: 50%;
+    
+}
+
+.menu .controles{
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.menu .controles a{
+    color: var(--cordestaque2);
+    text-decoration: none;                                          
+    padding: 30px 0;
+    text-align: center;
+}
+
+.menu .controles a:hover{
+    background-color: #34343484;
+    color: var(--corneutra1);
+    transition: 1s;
+    
+}
+/* fim do menu */ 
+
+
+
+
+
+
+/* container painel */
+
+.container-principal .container-painel{
+    width: 100%;
+    height: 100%;
+    background-color: var(--corprincipal);
+    margin-left:auto;                                         
+}
+
+
+
+
+
+
+/* container análise */ 
+
+.container-painel .container-analise{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-painel .container-analise .bloco-geral{
+    width: 95%;
+    height: 50vh;
+    border: 2px solid black ;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: var(--corneutra2);
+}
+
+.container-painel .container-analise .bloco-2{
+    width: 95%;
+    height: 35vh;
+    border: 2px solid black ;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.container-painel .container-analise .bloco-2 .card{
+
+    width: 392px;
+    height: 100%;
+    background-color: var(--corneutra2);
+}
+
+
+
+/* fim do container análise */
+
+/* fim do container painel */
+
