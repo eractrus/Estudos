@@ -8,6 +8,9 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+   background: linear-gradient(90deg, rgba(2,0,36,1) 36%, rgba(2,2,2,1) 74%, rgba(0,0,0,1) 100%);
+}
 
 html{
    scroll-behavior:smooth ;
@@ -17,7 +20,7 @@ html{
 
  .container-central{
     width: 100%;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 36%, rgba(2,2,2,1) 74%, rgba(0,0,0,1) 100%);
+  
     display: flex;
  }
 
@@ -29,16 +32,31 @@ html{
 
  /* container menu */
 
+.container-central .checkbtn{
+   color: white;
+   z-index: 1;
+   cursor: pointer;
+   font-size: 30px;
+   margin: 20px;
+   display: none;
+}
+
+input[type=checkbox]{
+   display: none;
+   background-color: white;
+   
+}
+  
  .container-central .menu{
-    width: 300px;
+    width: 250px;
     height: 100%;
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,2,2,1) 35%, rgba(2,0,36,1) 100%);
     position: fixed  ;
     top: 0;
-    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    display: flex;
  }
 
  .menu .navegacao{
@@ -92,7 +110,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: auto;
+    margin-left: 300px;
  }
 
  /* box */
@@ -101,7 +119,8 @@ html{
 
    width: 100%;
    height: 100vh;
-   margin-bottom: 10px;
+   margin:  20px auto;
+
   
 }
 
@@ -109,19 +128,52 @@ html{
 
 /* FIM DA BOX */
 
+
+
+
+
  /* CONTAINER HOME */
 
  .painel #home{
    display: flex;
+   justify-content: center;
    align-items: center;
+   flex-wrap: wrap;
+  
  }
 
  .painel #home .bloco{
-   width: 500px;
+   min-width: 500px;
    height: 400px;
-   margin: auto;
-   background-color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;  
+   background-color: rgba(255, 255, 255, 0.06);
+   color: white;
+   
  }
+
+ /* apresentação */ 
+
+ .tituloh1{
+  max-width: 400px;
+  font-size: 3em;
+  margin: 0px auto;
+  text-align: center;
+ }
+
+ #home p{
+  max-width: 400px;
+  margin: 10px auto;
+ }
+
+ #home .bloco img{
+  width: 400px;
+  height: 380px;
+  border-radius: 48%;
+ }
+
+ 
 
  /* fim do container home */ 
 
@@ -138,7 +190,13 @@ html{
  .painel #conhecimentos .card-conhecimentos{
    width: 90%;
    height: 300px;
-   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 100px ;
+   background-color: rgba(255, 255, 255, 0.06);
+   font-size: 100px;
+   border-radius: 15px;
  }
 
  /*fim da seção conhecimentos/*
@@ -148,18 +206,19 @@ html{
  .painel #portifolio{
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-around;
+   justify-content: space-between;
    align-items: center;
 
  }
 
  .painel #portifolio .card{
-   width: 200px;
+   width: 250px;
    height: 200px;
-   margin: 10px;
+   margin: 10px auto;
    border: 1px solid black;
    cursor: pointer;
    background-color: white;
+   border-radius: 20px;
  }
 
  /* fim do container portifolio */
