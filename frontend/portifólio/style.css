@@ -16,10 +16,22 @@ html{
    scroll-behavior:smooth ;
 }
 
+@keyframes animacao-inicial{
+  from{
+    opacity: .0;
+  }
+
+  to{
+    opacity: 1;
+  
+  }
+}
+
 /* container central */
 
  .container-central{
     width: 100%;
+  
  }
 
    /* ESSE CONTAINER COMPORTA AS DIV'S .MENU E .PAINEL */
@@ -144,21 +156,37 @@ html{
  /* apresentação */ 
 
  .tituloh1{
-  max-width: 400px;
-  font-size: 3em;
+  max-width: 500px;
+  font-size: 3.6em;
   margin: 0px auto;
   text-align: center;
+   animation-name: animacao-inicial;
+  animation-duration: 4s;
+  animation-delay: .1s;
  }
 
  #home p{
   max-width: 400px;
   margin: 10px auto;
+  text-align: right;
+   animation-name: animacao-inicial;
+  animation-duration: 5s;
+  animation-delay: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  
  }
 
  #home .bloco img{
-  width: 400px;
-  height: 400px;
+  width: 380px;
+  height: 380px;
+  margin-right: auto;
   border-radius: 50%;
+  animation-name: animacao-inicial;
+  animation-duration: 8s;
+  animation-delay: .1s;
+  
  }
 
  
