@@ -1,0 +1,62 @@
+/* Seletor universal - aplica a formatação para todos os elementos da página */
+
+*{
+    border: 1px solid red;
+}
+
+
+/* seletores de texto - h1, h2, h3 ... */ 
+
+h1{
+    color: green;
+}
+
+/* Seletor de class 
+
+.blue{
+    color:blue;
+}
+*/
+/* Seletor de ID */
+
+#pink{
+    color: pink;
+}
+
+/* Seletor de filho - utiliza-se o sina de maior para reperesentar o "parentesco" 
+ex: 
+    li>a
+
+    li = pai
+    > = filho
+    a = filho
+
+*/
+
+li>a{
+
+    font-size: 2em;
+    color: black;
+
+}
+
+/* Seletor descendente - seleciona qualquer elemento que esteja dentro de outro */
+
+p a {
+    font-size: 1.3;
+    color: red;
+}
+
+
+/* Seletor de irmão adjacente - sintaxe ex: h1 + p 
+
+seleciona o primeiro elemento p após qualquer H1
+
+*/
+
+
+h1 + p{
+    color: chartreuse;
+}
+
+
