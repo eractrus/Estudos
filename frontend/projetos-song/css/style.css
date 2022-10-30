@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+:root{
+    --cordefundo: #0c0311;
+    --corfundocard:#ffffff04;
+    --corclara:#EEE5E9;
+    --cordefonte:#eee5e96d;
+
+}
+
+body{
+    background-color: var(--cordefundo);
+    } 
+
+
+.container-geral{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding: 0 .5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container-geral .container-esquerda{ /*container esquerda */
+    width: 18%;
+    height: 100%;
+    background-color:var(--corfundocard);
+    box-shadow: 10px 0px 20px #eee5e915;
+}
+
+.container-esquerda .logo{
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/All_Music_Guide_Logo.svg/320px-All_Music_Guide_Logo.svg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-esquerda .menu{
+    width: 100%;
+    margin-top: 40px;
+}
+.container-esquerda .menu li{
+    color: var(--cordefonte);
+    width: 100%;
+    padding: 10px 0;
+    padding-left: 20px;
+    font-size: 1.1em;
+}
+
+.container-esquerda .menu li:hover{
+    cursor: pointer;
+    color:white;
+    transition: .4s;
+}
+
+.container-geral .container-centro{ /*Container centro */
+    width: 69%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-centro .topo{
+    width: 100%;
+    height: 75vh;
+    background-color:var(--corfundocard);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--cordefundo);
+}
+
+
+.topo .container-populares{
+    width: 100%;
+    height: 49%;
+    margin-bottom: 20px;
+   
+}
+
+.topo .container-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+.topo .container-recentes{
+    width: 100%;
+    height: 50%;
+}
+
+.container-centro .baixo{
+    width: 100%;
+    height: 24vh;
+    background-color: var(--corfundocard);
+    border-radius: 10px;
+
+}
+
+.container-card2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container-geral .container-direita{ /* container direita */
+    width: 12%;
+    height: 100%;
+    box-shadow: -10px 0px 20px #eee5e915;    
+}
+
+header{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+header label{
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    color: var(--corclara);
+    float: right;
+}
+
+input{
+    display: none;
+}
+
+.container-direita .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.container-direita .menu a{
+    color: var(--cordefonte);
+    padding: 5px 20px;
+}
+
+.menu a:hover{
+    cursor: pointer;
+    color:white;
+    transition: .4s;
+}
+
+a{
+    color: var(--corclara);
+    padding: 2px 20px;
+}
+
+
+
+
+
+
+
+
+
+/* uso geral */
+
+.rotulo{
+    color: var(--corclara);
+    margin: 15px 0px;
+    padding: 8px 0px 0px 10px;
+    font-size: .8em;
+    clear: both;
+    }
+
+.rotulos-maiores{
+    color: var(--corclara);
+    font-size: 1.2em;
+    padding: 10px 5px;
+}
+
+
+.card{
+    cursor: pointer;
+    width: 180px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px;
+    color: var(--corclara);
+    text-align: center;
+}
+
+
+.card img{
+    width: 100%;
+    height: 85%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.card img:hover{
+    opacity: .3;
+    transition: .4s;
+}
+
+.card2{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: var(--corclara);
+    text-align: center;
+    cursor: pointer;
+}
+
+.card2 img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.card2 img:hover{
+    opacity: .4;
+    transition: .4s;
+    width: 80px;
+    height: 80px;
+    
+}
