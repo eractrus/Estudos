@@ -9,167 +9,105 @@
 
 /* inicio do header */
 
-header{
-    width: 100%;
-    height: 60px;
-    background-color: rgb(27, 27, 118);
-    padding: 10px;
-}
-
-header h1{
-    color: tomato;
-    cursor: pointer;
-}
-
-header .container-header{
-    max-width: 1280px;
-    height: 100%;
-    margin:auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-header .container-header nav{
-    display: flex;
-    gap: 50px;
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .container-header nav a{
-    color: #fff;
-    text-decoration: none;
-    padding:20px;
-}
-
-header .container-header nav a:hover{
+.logo{
     background-color: tomato;
-    color: #fff;
-    padding: 20px;
-    transition: 1s;
-
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    padding: 10px 0;
 }
 
-/* main */
+
+.header{
+    width: 100%;
+    background-color: rgb(27, 27, 118);
+    position: relative;
+    top: 56px;
+    position: fixed;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    color: white;
+    padding: 5px 5%;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.menu a:hover{
+    color: tomato;
+    transition: .4s;
+}
 
 main{
+    width: 100%;
+    height: calc(100vh - 45px);
+    background-color: #f1f1f1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 80vh;
-    background-color: #ccc;
-    animation-name: inicio;
-    animation-duration: 60s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+    justify-content: end;
+    background-image: url('');
 }
 
-@keyframes inicio {
-    0%{
-        background-image: url('imagens/imagem01.jfif');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-    15%{
-        background-image: url('imagens/imagem02.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-    25%{
-        background-image: url('imagens/imagem03.jfif');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-    35%{
-        background-image: url('imagens/imagem04.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-    45%{
-        background-image: url('imagens/imagem05.jfif');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-    55%{
-        background-image: url('imagens/imagem06.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-    65%{
-        background-image: url('imagens/imagem07.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-    75%{
-        background-image: url('imagens/imagem08.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-    85%{
-        background-image: url('imagens/imagem09.jfif');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-    100%{
-        background-image: url('imagens/imagem10.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-   
-}
 
 main .buscar{
+    width: 95%;
+    height: 250px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
-    width: 1300px;
-    height: 100px;
-    padding: 0 2%;
-
+    
 }
 
-form{
+
+label{
     display: flex;
     align-items: center;
-    padding: 0 2%;
-}
-
-
-form input[type=text]{
-    width:500px;
-    height: 60px;
-    padding-left: 20px;
-    border: none;
-    font-size: 20px;
-}
-
-form input[type=submit]{
-    width: 100px;
-    height: 60px;
-    background-color: tomato;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0px 0px 10px tomato;
-    border: none;
-}
-
-.container-card{
+    justify-content: center;
     width: 100%;
+}
+input[type="text"]{
+    width: 60%;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+}
+
+input[type="submit"]{
+    width: 100px;
+    height: 41px;
+    background-color: tomato;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 0px 7px 7px 0px;
+}
+
+
+main .container-card{
+    width: 95%;
     height: 300px;
-    background-color: rgb(27, 27, 118);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.container-card .card{
+    width: 400px;
+    min-width: 100px;
+    height: 100%;
+    background-color: blue;
+    margin: 10px auto;
+    border-radius: 20px;
+
 }
