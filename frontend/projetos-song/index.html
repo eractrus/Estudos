@@ -4,24 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto - song</title>
-    <script src="https://kit.fontawesome.com/da841ddc6b.js" crossorigin="anonymous"></script>
+    <title>All Music - home</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="https://kit.fontawesome.com/da841ddc6b.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
 
     <div class="container-geral">
 
 
-        <div class="container-esquerda">
+            <input type="checkbox" name="check" id="check">
+    
+            <label for="check" class="checkbtn">  
+        
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+
+        <nav class="container-esquerda">
 
             <div class="logo">
                 
             </div>
 
-            <nav class="menu">
-                <p class="rotulo">Categorias</p>
+            <div class="menu">
+
+                <div id="logo"></div>
+
                 <ul>
+
+                    <li> 
+                        <i class="fa-sharp fa-solid fa-house"></i>
+                        Início</li>
+
+                    <li>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Pesquisar</li>
+
+                    <li>
+                        <i class="fa-solid fa-plus"></i>
+                        Criar playList</li>
+                     
+                </ul>
+
+            </div>
+
+            <div  class="menu">
+
+            
+
+                <p class="rotulo">
+
+                     <i class="fa-solid fa-list"></i>
+
+                    Categorias</p>
+
+                <ul id="categorias">
+
                     <li>Pagode</li>
                     <li>Funk</li>
                     <li>Clássica</li>
@@ -31,10 +72,13 @@
                     <li>Rap</li>
                 </ul>
 
-            </nav>
+            </div>
 
 
-            </div><!--fim do esquerda-->
+
+            </nav><!--fim do esquerda-->
+
+        </header>
 
 
         <div class="container-centro">
@@ -58,6 +102,15 @@
                         <p>Ferrugem</p>
 
                         </div><!--fim do card-->
+
+                        <div class="card">
+
+                            <img src="https://lastfm.freetls.fastly.net/i/u/ar0/a414add7b87cce8793fdbab28074573a.jpg" alt="Cantor L7">
+    
+                            <p>l7nnon</p>
+    
+                            </div><!--fim do card-->
+    
 
 
                         <div class="card">
@@ -100,7 +153,13 @@
                     
                         <div class="container-card">
 
-                           
+                            <div class="card">
+
+                                <img src="https://ilarge.lisimg.com/image/14170783/740full-rihanna.jpg" alt="Cantora Rhiana">
+            
+                                <p>Rhiana</p>
+            
+                            </div><!--fim do card-->
     
                             
                              <div class="card">
@@ -113,7 +172,7 @@
 
                             <div class="card">
 
-                                <img src="https://difusora98.com.br/wp-content/uploads/2018/04/simone-e-simaria.jpg" alt="Cantoras Simone e Simaria">  
+                                <img src="https://th.bing.com/th/id/R.4e83551df6e8213b0817456dccbeffd2?rik=oYCnM7YOvwiDvw&pid=ImgRaw&r=0" alt="Cantoras Simone e Simaria">  
             
                                 <p>Simone e Simaria</p>
             
@@ -123,7 +182,7 @@
                             
                             <div class="card">
 
-                                <img src="https://th.bing.com/th/id/R.64eb54ca83428acd4f2628c5747c842f?rik=C%2bL4qyc7XXbzPQ&pid=ImgRaw&r=0" alt="Cantor Wesley safadão">  
+                                <img src="https://jornaldoporto.inf.br/hf-conteudo/uploads/posts/2020/04/3709_cb41c43162cec0e2f27d94ad6890d1d0.jpg" alt="Cantor Wesley safadão">  
             
                                 <p>Wesley Safadão</p>
             
@@ -156,7 +215,7 @@
 
             <div class="baixo">
 
-                <p class="rotulos-maiores">Artista em alta</p>
+                <p id="titulo-artista-em-alta" class="rotulos-maiores">Artista em alta</p>
 
                 <div class="container-card2">
 
@@ -214,17 +273,17 @@
 
         <div class="container-direita">
 
-            <header>
-                <label for="check">
-                    <input type="checkbox" id="check">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
-                
-            </header>
+          <div>
+
+          </div>
 
             <div>
 
-                <p class="rotulo">Perfil</p>
+                <p class="rotulo"> 
+
+                    <i style="padding-right: 3px;" class="fa-solid fa-user"></i>
+                    
+                    Perfil</p>
                 <nav class="menu">
 
                     <a href="#">Dados pessoais</a>
@@ -245,6 +304,6 @@
 
     </div><!--fim do container geral-->
 
-    
+
 </body>
 </html>
