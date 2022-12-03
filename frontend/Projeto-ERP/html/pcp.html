@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCP</title>
+    <script src="https://kit.fontawesome.com/da841ddc6b.js" crossorigin="anonymous"></script>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap'); </style>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="controles">
+
+            <div class="logo">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h4>PCP</h4>
+            </div><!--logo-->
+        <hr>
+            <nav>
+                <ul>
+
+                <label for="gerar">
+                    
+                    <input type="checkbox" name="controles" id="gerar">
+                        <li>
+                            Gerar etiqueta
+                        </li>
+                      
+                            <label for="gerar"></label>
+                            <div class="container-etiquetas">
+                                <i class="fa-solid fa-x"></i>
+
+                                <form action="#">
+
+                                    <div class="tipo">
+                                        <label for="kit">Kit</label>
+                                        <input type="radio" name="tipo" id="kit">
+
+                                        <label for="caixa">Caixa</label>
+                                        <input type="radio" name="tipo" id="caixa">
+                                    </div>
+
+                                    <div class="container-input">
+                                        <input type="text" name="" id="" placeholder="digite a ordem" maxlength="6">
+                                        <input type="text" name="" id="" placeholder="digite a quantidade"maxlength="4">
+                                    </div>
+                                   
+                                    <div class="botoes">
+                                        <button>Gerar etiquetas</button>
+                                        <button>Cancelar</button>
+                                    </div>
+                                </form>
+                            </div>
+                </label>
+
+                <label for="planejamento">
+                    <input type="radio" name="controles" id="planejamento">
+                        <li>
+                            Planejamento
+                        </li>
+                </label>
+
+                    <label for="consultar-saldo">
+                        <input type="radio" name="controles" id="consultar-saldo">
+                            <li>
+                                Consultar saldo
+                            </li>
+                    </label>
+
+                    <label for="requisicao">
+                        <input type="radio" name="controles" id="requisicao">
+                            <li>
+                                Gerar requisição
+                            </li>
+                    </label>
+
+                    <label for="estrutura">
+                        <input type="radio" name="controles" id="estrutura">
+                            <li>
+                                Estrutura de produto
+                            </li>
+                    </label>
+
+                    <label for="insumos">
+                        <input type="radio" name="controles" id="insumos">
+                            <li>
+                                Insumos
+                            </li>
+                    </label>
+
+                </ul>
+            </nav>
+
+            <hr>
+            
+            <div class="calendario">
+                <input type="date" name="data" id="data">
+            </div>
+
+            <a class="contato-suporte" href="#">Suporte TI</a>
+
+        </div><!--Controles-->
+
+        <div class="painel">
+
+              <section class="atualizacao">
+
+                <div class="atualizacao-icon">
+                    <h5>03 dez 2022 - 10:51 </h5>
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                </div>  
+
+
+                <div class="icon-basic">
+                    <i class="fa-regular fa-bell"></i>
+                    <a href="../index.html"id="btn-home"><i  class="fa-solid fa-house" ></i>
+                    </a>
+                </div>
+
+            </section><!--atualização -->
+
+        </div><!--Painel embalagem-->
+        
+
+    </div><!--Container-->
+
+    
+    
+</body>
+</html>
