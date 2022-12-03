@@ -187,6 +187,56 @@ input[type="date"]{
     color:var(--corescura)
 }
 
+/* página painel */
+
+.container-resumo{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1%;
+}
+
+.card-resumo{
+    width: 24%;
+    height: 150px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.463);
+    border-radius: 10px;
+    color: white;
+
+}
+
+#card1{
+    background-color:var(--cordestaque);
+}
+
+#card2{
+    background-color:tomato;
+}
+
+#card3{
+    background-color:red;
+}
+
+#card4{
+    background-color:steelblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#card4 .sexo{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#card4 h1{
+    font-size: 3em;
+}
+
 /* página embalagem */
 
 .painel{
