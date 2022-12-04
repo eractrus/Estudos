@@ -159,7 +159,7 @@ input[type="date"]{
     background-color: var(--corneutro);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.463);
     width: 350px;
-    height: 250px;
+    height: 400px;
     overflow: auto;
     border-radius: 10px;
     z-index: 1;
