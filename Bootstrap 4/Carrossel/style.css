@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+.container{
+    width: 600px;
+    height: 200px;
+    margin: 20px auto;
+    border: 1px solid black;
+    display: flex;
+    overflow: hidden;
+
+
+
+}
+
+.container-img{
+    width: 600px;
+    height: 200px;
+    position: relative;
+    animation-name: slide;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.container-img img{
+    width: 600px;
+    height: 200px;
+}
+
+@keyframes slide{
+
+    0%{
+
+        right: 0px;
+
+    }
+
+    20%{
+        right: 600px;
+    }
+
+    40%{
+        right: 1200px;
+
+    }
+
+    60%{
+        right: 1800px;
+
+    }
+
+    80%{
+        right: 2400px;
+
+    }
+
+    100%{
+        right: 3000px;
+
+    }
+
+   
+}
+
