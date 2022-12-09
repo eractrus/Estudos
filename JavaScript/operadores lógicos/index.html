@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores lógicos</title>
+</head>
+<body>
+
+    
+        <p>E (&&) - verdadeiro se todas as expressões forem verdadeiras</p>
+        <p> OU (||) - Verdadeiro se pelo menos uma das expressões for verdadeiro</p>
+        <p>Negação (!) - Inverte o resultado da expressão de comparação</p><br><hr> 
+    
+
+ 
+
+    <!--Praticando-->
+
+    <script>
+
+        var cadlogin = 'eractrus'
+        var cadsenha = '12345'
+
+        var login =prompt('Digite seu Login')
+
+        var senha =prompt('Digite sua Senha')
+
+
+
+        if(cadlogin == login && cadsenha == senha){
+
+            document.write( 'Seja bem - vindo ' + login)
+        }else{
+
+            document.write( login + ' login ou senha informado estão inválidas, tente novamente')
+
+        }
+         
+    </script>
+    
+</body>
+</html>

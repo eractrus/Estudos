@@ -26,15 +26,15 @@ Bollean - True our false
 
 // Variável string
 
-var texto = 'Eractrus'
+//var texto = 'Eractrus'
 
 // Variável number
 
-var numeroInteiro = -7
-var numeroFracionado = 1024.35
+//var numeroInteiro = -7
+//var numeroFracionado = 1024.35
 // Variável boolean
 
-var verificar = true
+//var verificar = true
 
 //------------------------------------Comandos----------------------------------
 
@@ -43,3 +43,17 @@ var verificar = true
 //document.write(texto)// podemos escrever textos no navegador
 
 //console.log(texto)
+
+
+// Convertendo tipos de dados
+
+    var variavel1 = prompt('Digite o valor1')
+    var variavel2 = promtp('Digite o valor2')
+    
+    document.write(variavel1 + variavel2)
+
+   /* if(){
+
+    }else{
+
+    }
