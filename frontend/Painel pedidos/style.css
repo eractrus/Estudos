@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #c1c1c1;
+}
+
+.container-geral{
+    background-color: #040404;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-geral .controles{
+    width: 250px;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgba(204, 204, 204, 0.195);
+}
+
+.controles .navegacao{
+    width: 100%;
+}
+
+.navegacao li{
+    padding: 30px 15px;
+    cursor: pointer;
+}
+
+.navegacao li:hover{
+    color: royalblue;
+    background-color: rgb(71, 71, 71);
+}
+
+i{
+    color: #fff;
+    margin-right: 5px;
+}
+
+.painel{
+    width: 100%;
+    height: 100%;
+}
+
+.container-box-dados{
+    width: 98%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.box-dados{
+    width: 24%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.185);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.numero-titulo{
+    font-size: 50px;
+}
+
+.descricao-sub{
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.container-tabelas{
+    width: 50%;
+    height: 50vh;
+    padding: 15px;
+    overflow: auto;
+    
+}
