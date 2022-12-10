@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos mouse</title>
+</head>
+<body style="display: flex;
+justify-content: space-between; flex-wrap: wrap;">
+
+    <div onclick="acao()" style=" width: 200px; height: 200px; background-color: red; color:#fff; cursor: pointer; ">
+        <h1>onclick</h1>
+    </div>
+
+    <div ondblclick="acao()" style=" width: 200px; height: 200px; background-color: green; color:#fff; cursor: pointer; ">
+        <h1>ondblclick</h1>
+    </div>
+
+    <div onmouseup="acao()" style=" width: 200px; height: 200px; background-color: yellow; color:#fff; cursor: pointer; ">
+        <h1>onmouseup</h1>
+    </div>
+
+    <div onmouseover="acao()" style=" width: 200px; height: 200px; background-color: blue; color:#fff; cursor: pointer; ">
+        <h1>onmouseover</h1>
+    </div>
+
+    
+    <div onmouseout="acao()" style=" width: 200px; height: 200px; background-color: #ccc; color:#fff; cursor: pointer; ">
+        <h1>onmouseout</h1>
+    </div>
+
+
+    <script>
+        function acao(){
+            alert('Você tem certeza ?')
+        }
+    </script>
+    
+</body>
+</html>

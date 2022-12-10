@@ -1,0 +1,16 @@
+Mouse
+
+1 - onclick, quando tem um clique 
+2 - ondblbclick, quando tem dois cliques
+3 - onmouseup, quando o clique do elemento é liberado
+4 - onmouseover, quando o cursor do mouse passa por cima 
+5 - onmouseout, quando o cursor do mouse sai de cima do elemento
+
+
+
+teclado
+
+1 - onkeydown, aciona quando clicamos em uma tecla
+2 - onkeypress, quando precionamos uma tecla que possui algum caractere
+3 - onkeyup, aciona quando soltamos uma tecla
+
