@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo de variáveis</title>
+</head>
+<body>
+
+    <script>
+        // o javascript possui 3 escopos: global, da função, de bloco
+
+        // scopo de variável global
+            var serie = 'Nu'
+
+        // escopo de variável de bloco  / acessa a global
+        if (true){
+                    var serie2 = 'Um maluco no pedaço'
+                    document.write(serie + ' escopo de bloco')
+                }
+
+                document.write(serie2)
+
+                document.write('<br/>')
+
+        // escopo de variável de função   / acessa a global, acessa o bloco
+            function x(){
+                document.write(serie2)
+                document.write(serie + ' escopo de função')
+                
+            }
+
+            x()
+
+            // escopo de função e escopo de bloco conseguem acessar as variáveis globais
+            //escopo de bloco quando declarado uma variável interna, ela sofre elevação 
+            //Escopo de fução não sofre elevação
+
+      
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 4
+
+    </title>
+</head>
+<body>
+    <script>
+
+        //entrada de dados
+        nome = prompt( 'Digite seu nome: ')
+        altura = prompt( 'Digite sua altura em cm: ')
+        peso = prompt( 'Digite seu peso: ')
+        status = null
+      
+        // conversaão dos dados para float
+        altura = parseFloat(altura)
+        peso = parseFloat(peso)
+
+        //conversão da altura de cm para M
+        altura /= 100
+        //document.write(' Seu peso é : ' + altura + '<br/>')
+
+        //cálculo de Massa corporal
+        var m = peso / (altura * altura)
+        //document.write('sua massa corporal é: ' + m +'<br/>')
+
+        //classificação do resultado massa corporal
+            if(m < 16){
+                status = 'Baixo peso muito grave'
+            }
+                if (m > 16 && m <= 16.99) {
+                    status =' Baixo peso grave' 
+                } 
+                    if (m >= 17 && m <= 18.49) {
+                        status = ' Baixo peso '
+                    } 
+                        if (m >= 18.50 && m <= 24.99) {
+                            status = ' Peso normal'
+                        } 
+                            if(m >= 25 && m <= 29.99) {
+                                status = ' Sobrepeso '
+                            } 
+                                if(m >= 30 && m <= 34.99){
+                                    status = ' Obesidade grau I'
+                                }
+                                    if(m >= 35 && m <= 39.99){
+                                        status = 'Obesidade grau II '
+                                    }
+                                        if(m > 40){
+                                            status = ' Obesidade grau III'
+                                        }
+
+        //Parecer final
+        document.write('<br/><br/>' + nome + ' possui um indice de massa corporal igual a ' + m + ', sendo classificado como: ' + status)
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções de callback</title>
+</head>
+<body>
+    <!--Funções de callback são funções encaminhadas como parâmentros para outras funções-->
+    <script>
+
+        var nome = 'Eractrus'
+        var idade = '26'
+        var id = prompt('dugite seu ID')
+
+
+            function chamarNome (id, callbackSucesso, callbackErro){
+
+                if(id === '000' ){
+                    callbackSucesso()
+                }else{
+                    callbackErro()
+                }
+            }
+
+            // técnica de wrapper - declaração de variáveis com funções
+            var callbackSucesso = function(){
+                document.write('Seu nome é: ' + nome + '<br/>')
+                document.write('sua idade é: ' + idade)
+            }
+
+            var callbackErro = function(){
+                document.write('Erro na solicitação de dados')
+            }
+
+            //chamando a função 
+            chamarNome(id, callbackSucesso, callbackErro)
+
+    </script>
+</body>
+</html>
