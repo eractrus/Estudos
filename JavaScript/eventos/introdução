@@ -14,3 +14,20 @@ teclado
 2 - onkeypress, quando precionamos uma tecla que possui algum caractere
 3 - onkeyup, aciona quando soltamos uma tecla
 
+
+
+
+janela
+
+1 - onresize, é acionado quando a janela é redimencionado
+2 - onscroll
+
+
+formulários
+
+1 - onfocus, quando clicar em algum elemento é aplicado um foco
+2 - onblur, é acionado quando o elemento perde o foco
+3 - onchange, quando o estado do elemento é modificado
+
+
+

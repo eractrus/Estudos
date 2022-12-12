@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando estilos dos elementos</title>
+</head>
+
+
+<body>
+    <a onclick="alterarCor('#ff0000')" style="text-decoration: none; padding: 8px 16px; background-color: #ff0000; border: 1px solid black; color: #fff;" href="#">Vermelho</a>
+
+    <a onclick="alterarCor('#ffff00')" style="text-decoration: none; padding: 8px 16px; background-color: #ffff00; border: 1px solid black; color: #000;" href="#">Amarelo</a>
+
+    <a onclick="alterarCor('#008000')" style="text-decoration: none; padding: 8px 16px; background-color: #008000; border: 1px solid black; color: #fff;" href="#">Green</a> <hr>
+
+
+    <div id="bloco" style="width: 100%; height: 200px ; background-color: #ccc;"></div>
+
+
+    <script>
+                function alterarCor(CordeFundo){
+
+                    var l = prompt('Digite a largura do bloco e a unidade de medida ex: 100px')
+                    var a = prompt('Digite a altura do bloco e a unidade de medida ex: 100px')
+
+                  
+                    document.getElementById('bloco').style.background = CordeFundo
+
+                    document.getElementById('bloco').style.height = a
+
+                    document.getElementById('bloco').style.width = l
+
+                }
+
+         
+                
+               
+
+    </script>
+
+</body>
+</html>

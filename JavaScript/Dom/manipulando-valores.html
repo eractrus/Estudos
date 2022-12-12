@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando valores - input text </title>
+
+   
+</head>
+<body>
+  
+
+      
+        <input onkeyup="Caracter()" type="text" name="" id="entrada" placeholder="Digite qualquer coisa">
+        <br><br><hr>
+
+        <span>Letra</span>
+        <input type="text" name="" id="letras" disabled>
+
+        <span>Número</span>
+        <input type="text" name="" id="numeros" disabled>
+
+
+        <script>
+
+        function Caracter(){
+            //selecionar o valor digitado
+            var Caracter = document.getElementById('entrada').value
+
+            // limpar campo de entrada
+            document.getElementById('entrada').value = ''
+
+            // remover espaços nas extremidades da string
+            Caracter.trim()
+
+            //regra
+            switch(Caracter){
+
+                    case '1':
+                    case '2':
+                    case '3':
+                    case '4':
+                    case '5':
+                    case '6':
+                    case '7':
+                    case '8':
+                    case '9':
+                    case '0':
+                    //adicionar o caracter referente ao número
+                    document.getElementById('numeros').value += Caracter
+                    break;
+                    default:
+                    //adicionar o caracter no campo referente a letra
+                    document.getElementById('letras').value += Caracter
+            }
+        }
+    </script>
+
+
+</body>
+</html>

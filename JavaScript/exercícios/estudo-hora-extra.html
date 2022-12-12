@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de funções - cálculo de horas extras</title>
+</head>
+<body>
+
+    <script>
+
+        //entrada de dados
+        var salarioBruto = prompt('Digite seu salário bruto')
+        var totaldeHoras50 = prompt('Digite o total de horas extras de 50%')
+        var totaldeHoras100 = prompt('Digite o total de horas extras de 100%')
+
+        var totalHotaMes = 220
+
+        // conversão para número float
+        salarioBruto = parseFloat(salarioBruto)
+        totaldeHoras50 = parseFloat(totaldeHoras50)
+        totaldeHoras100 = parseFloat(totaldeHoras100)
+
+        document.write('Salário Bruto - R$' + salarioBruto + '<br/>')
+        document.write('Horas trabalhadas 50% - ' + totaldeHoras50 + '<br/>')
+        document.write('Horas trabalhadas 100% - ' + totaldeHoras100 + '<br/><hr/>')
+
+
+        //Calcula hora de 50%
+        document.write('valor da hora 50% - R$')
+        var hora50 = calcularHora50(salarioBruto, totalHotaMes)
+        function calcularHora50(salarioBruto, totalHotaMes){
+
+            hora50 = ((salarioBruto / totalHotaMes) * (50/100) + (salarioBruto / totalHotaMes))
+
+            return hora50
+        }
+            document.write(hora50 + '<br/>')
+
+
+        //Calcula hora de 100%
+        document.write('valor da hora 100% - R$')
+        var hora100 = calcularHora100(salarioBruto, totalHotaMes)
+        function calcularHora100(salarioBruto, totalHotaMes){
+
+            hora100 = ((salarioBruto / totalHotaMes) * (100/100) + (salarioBruto / totalHotaMes))
+
+            return hora100
+        }
+            document.write(hora100 + '<hr/>')
+
+        //calcular hora extra 50%
+
+        var resultado50 = CalcularHoraExtra(hora50, totaldeHoras50)
+        function CalcularHoraExtra(hora50, totaldeHoras50){
+            resultado50 = (hora50 * totaldeHoras50)
+
+            return resultado50
+        }
+
+        document.write('Valor total a receber referente as horas extras de 50% em R$ é:   R$' + resultado50 + '<br/>')
+
+        // calcular hora extra 100%
+        var resultado100 = CalcularHoraExtra(hora100, totaldeHoras100)
+        function CalcularHoraExtra( hora100, totaldeHoras100){
+
+            resultado100 = (hora100 * totaldeHoras100)
+
+            return resultado100
+        }
+
+        document.write('Valor total areceber referente as horas extras de 100% em R$ é:   R$' + resultado100)
+    </script>
+    <hr>
+
+</body>
+</html>

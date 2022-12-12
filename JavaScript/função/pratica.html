@@ -9,8 +9,8 @@
 <body>
 
     <script>
-/*
-        var largura = prompt('Digite o valor da largura do terreno em metros')
+
+      /*  var largura = prompt('Digite o valor da largura do terreno em metros')
 
         var comprimento = prompt('Digite o valor do comprimento do terreno em metros')
 
@@ -27,11 +27,31 @@
         document.write('O terreno possui ' + area + 'M²' )*/
         
 
-        function soma(a,b){
+        /*function soma(a,b){
             return a+b
         }
 
-        console.log(soma(7,7))
+        console.log(soma(7,7))*/
+
+        var nota1 = 6
+        var nota2 = 7
+
+        var media = calcularMedia (nota1, nota2)
+        function calcularMedia (nota1, nota2){
+            media = (nota1 + nota2) / 2
+
+            if(media <= 6){
+                document.write('Reprovado')
+            }else{
+                document.write('Aprovado')
+            }
+
+            return media
+        }
+
+        document.write(' com a média: ' + media)
+
+
         
     </script>
     
