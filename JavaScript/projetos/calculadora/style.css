@@ -25,6 +25,8 @@
     background-color: #fff;
     padding: 20px 10px;
     border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.358);
+
 }
 
 .container-tela{
@@ -41,6 +43,7 @@
     text-align: right;
     font-size: 20px;
     color: rgb(44, 44, 44);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.473);
 }
 
 .container-botao{
@@ -59,6 +62,7 @@
 
 .grupo-btn{
     width: 100%;
+    padding: 1.5px;
 }
 
 .grupo-btn-2{
@@ -113,6 +117,7 @@
     justify-content: center;
     align-items: center;
     font-size: 22px;    
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.426);
 }
 
 
@@ -128,7 +133,7 @@
 }
 
 .btn-2{
-    width: 140px;
+    width: 138px;
 }
 
 .btn-2:hover{
