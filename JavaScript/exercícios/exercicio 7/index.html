@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>base de estudos</title>
+</head>
+<body>
+
+    <input onfocus="foco()" onblur="semfoco()" onkeyup="contarCaracter()" type="text" id="texto">
+
+    <script>
+
+   // tarefa 1
+   function foco(){
+            document.getElementById('texto').style.background = 'yellow'
+        }
+
+        function semfoco(){
+            document.getElementById('texto').style.background = '#fff'
+        }
+
+        var caracter = ''
+
+        function contarCaracter(){
+
+            var valorCampo = document.getElementById('texto').value
+
+            if(valorCampo.length <= 3 ){
+                document.getElementById('texto').style.background = 'red'
+            } else{
+                document.getElementById('texto').style.background = 'green'
+            }
+        }
+        
+        
+      /*  var resultado = document.getElementById('texto')
+        console.log(resultado)*/
+
+ 
+
+
+        
+
+        
+    </script>
+</body>
+</html>

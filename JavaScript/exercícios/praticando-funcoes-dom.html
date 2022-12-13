@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica</title>
+</head>
+<body>
+
+    <script>
+         var numero1 = prompt('Digite um número')
+         var numero2 = prompt('Digite outro numero')
+
+        numero1 = parseFloat(numero1)
+        numero2 = parseFloat(numero2)
+
+        var total= soma(numero1, numero2)
+        function soma(numero1, numero2){
+           
+            var total = numero1 + numero2
+            return total
+        }
+
+        var amostrar = amostrarValores(total, numero1, numero2)
+        function amostrarValores(total, numero1, numero2){
+           
+            return total
+        }
+           
+    </script>
+
+        <button onclick="amostrarValores(document.write('o resultado da soma entre o numero ' + numero1 + ' e o numero ' + numero2 + ' é - ' + amostrar))">Solicitar resultado</button>    
+    
+</body>
+</html>

@@ -59,19 +59,30 @@
             return resultado50
         }
 
-        document.write('Valor total a receber referente as horas extras de 50% em R$ é:   R$' + resultado50 + '<br/>')
+        //document.write('Valor total a receber referente as horas extras de 50% em R$ é:   R$' + resultado50 + '<br/>')
 
         // calcular hora extra 100%
         var resultado100 = CalcularHoraExtra(hora100, totaldeHoras100)
         function CalcularHoraExtra( hora100, totaldeHoras100){
 
             resultado100 = (hora100 * totaldeHoras100)
-
             return resultado100
+           
         }
 
-        document.write('Valor total areceber referente as horas extras de 100% em R$ é:   R$' + resultado100)
+        function abrirValores(resultado50,resultado100){
+
+            document.write('Total a receber 100% -  R$' + resultado100 + '<br/>')
+            document.write('Total a receber 50% -  R$' + resultado50)
+
+        }
+
+   
+
+       // document.write('Valor total areceber referente as horas extras de 100% em R$ é:   R$' + resultado100)
     </script>
+
+    <button onclick="abrirValores(resultado50, resultado100)">Calcular total a receber</button>
     <hr>
 
 </body>
