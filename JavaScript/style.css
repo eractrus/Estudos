@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.painel{
+    width: 500px;
+    height: 600px;
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-visor{
+    width: 100%;
+    display: flex;
+    padding: 5px;
+}
+
+.container-entrada, .container-saida{
+    width: 50%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    font-size: 22px;
+    text-align: center;
+    padding: 10px;
+}
+
+#receita, #dispesa{
+    border: none;
+    width: 100%;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.container-saldo{
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+}
+
+#saldo_total{
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    border: none;
+    border-radius: 10px;
+}
+
+.container-entrada-de-dados{
+    width: 100%;
+    height: 180px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-tipo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    margin-bottom: 30px;
+}
+
+.container-box-input-valores{
+    width: 100%;
+}
+
+#receber-entrada{
+    width: 100%;
+    height: 60px;
+    padding: 5px 8px;
+}
+
+.container-btn{
+    width: 100%;
+    margin-top: auto;
+}
+
+.btn-enviar{
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(63, 0, 115);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn-enviar:hover{
+    background-color: rgb(43, 0, 78);
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="painel">
+
+            <div class="container-visor">
+
+                <div class="container-entrada">
+                    <div><h1 class="titulo">Entrada </h1></div>
+
+                    <div class="janela"><input type="text" id="receita" disabled></div>
+                </div>
+
+                <div class="container-saida">
+                    <div><h1 class="titulo">Saída</h1></div>
+
+                    <div class="janela"><input type="text" id="dispesa" disabled></div>
+                </div>
+
+            </div><!--container visor-->
+
+            <div class="container-saldo">
+
+                <input type="text" id="saldo_total" disabled>
+
+            </div><!--container saldo-->
+
+            <div class="container-entrada-de-dados">
+
+                <div class="container-tipo">
+
+                    <div>
+                        <label for="tipo_entrada">Entrada:</label>
+                        <input onclick="classificar('1')" type="radio" name="tipo" id="tipo_entrada" value="entrada">
+                    </div>
+
+                    <div>
+                        <label for="tipo_saida">Saída:</label>
+                        <input onclick="classificar('0')"  type="radio" name="tipo" id="tipo_saida" value="saida">
+                    </div>
+
+                </div><!--container-tipo-->
+
+                <div class="container-box-input-valores">
+
+                    <div>
+                        <input type="text" id="receber-entrada" placeholder="Insira os valores de entrada">
+                    </div>
+
+
+                </div><!--Container box input valores-->
+
+                <div class="container-btn">
+                    <button onclick="enviar_dados()" class="btn-enviar">Enviar</button>
+                </div><!--Container btn-->
+
+            </div><!-- container entrada de dados-->
+
+        </div><!--painel-->
+
+    </div><!--container-->
+
+    <script>
+
+
+
+             function classificar (tipo){
+
+                if(tipo === '1'){
+                    var classificar = 'Entrada'
+                }
+                
+                else if(tipo === '0'){
+                    var classificar = 'Saida'
+                }
+
+               // console.log(classificar)
+            }
+
+
+            // entrada de valor da conta
+            function entrada_valores(){
+
+                var valor = document.getElementById('receber-entrada').value
+
+            }  
+            function enviar_dados(){
+     
+                if( classificar == '1'){
+
+                var entrada_receita = document.getElementById('receita').value = dados
+
+                }else if(classificar == '0'){
+
+                    var entrada_saida = document.getElementById('dispesa').value = dados
+
+                }
+              /*  var dados =  document.getElementById('receber-entrada').value
+                document.getElementById('receber-entrada').value = ""
+
+                dados = parseFloat(dados)*/
+
+               // document.getElementById('saida').value = dados
+        }
+
+      
+
+            
+    </script>
+</body>
+</html>
