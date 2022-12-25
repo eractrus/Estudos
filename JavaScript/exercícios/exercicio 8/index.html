@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+<body>
+    
+    <input type="text" name="entrada" id="entrada">
+    <button onclick="amostrar()">Adicionar</button>
+    <button onclick="ordenar()">Ordenar</button>
+
+    <hr>
+
+    <script>
+
+            var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+            console.log(objetos)
+
+            function ordenar(){
+                console.log(objetos.sort())
+            }
+
+            var entrada = amostrar()
+                function amostrar(){
+
+                    var entrada_texto = document.getElementById('entrada').value
+                    document.getElementById('entrada').value = ''
+
+                    //console.log(entrada_texto)
+
+                        if(entrada_texto === ''){
+
+                            alert('Informe um valor válido')
+
+                        }else if(entrada_texto.indexOF(entrada_texto) === -1 ){//objetos[0] || entrada_texto === objetos[1] || entrada_texto === objetos[2]){
+
+                            alert('Objeto ja foi adcionado')
+                        }else if(entrada_texto !== objetos[0] || entrada_texto === objetos[1] || entrada_texto === objetos[2] ){
+                            objetos.push(entrada_texto)
+                        }
+
+
+            }
+         
+    </script>
+
+  
+
+
+</body>
+</html>
