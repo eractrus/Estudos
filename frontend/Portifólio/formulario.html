@@ -18,22 +18,22 @@
 
             <div class="input-dados-pessoais">
 
-                <label onclick="validacao()" for="nome">Nome:</label>
-                <input type="text" id="nome" placeholder="Digite seu nome...">
+                <label for="nome">Nome:</label>
+                <input  type="text" id="nome" placeholder="Digite seu nome..." required maxlength="40" minlength="4">
 
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" placeholder="Digite seu e-mail...">
+                <input onfocus="" type="email" id="email" placeholder="Digite seu e-mail..." required maxlength="50" >
 
                 <label for="telefone">Telefone:</label>
-                <input type="text" id="telefone" placeholder="Digite seu número (Whatsapp)">
+                <input onfocus="" type="text" id="telefone" placeholder="Digite seu número (Whatsapp)" required maxlength="12" minlength="11">
 
             </div><!-- input dados pessoais-->
 
             <div class="tipo-servico">
 
                 <label for="tipo">Serviço:</label>
-                <select name="tipo" id="tipo">
-
+                <select name="tipo" id="tipo" required>
+                    <option value="" selected></option>
                     <option value="Landing pa">Landing page</option>
                     <option value="Blog / Site">Blog / Site</option>
                     <option value="Manutenç">Manutenção</option>
@@ -47,7 +47,7 @@
             <div class="container-comentario">
 
                 <label for="cometario">Observação:</label>
-                <textarea name="comentario" id="comentario" cols="100%" rows="5" placeholder="Fale um pouco sobre o projeto"></textarea>
+                <textarea name="comentario" id="comentario" cols="100%" rows="5" placeholder="Fale um pouco sobre o projeto" required maxlength="150"></textarea>
             </div>
 
             <input type="submit" name="enviar" id="enviar" value="Enviar Mensagem">
@@ -56,9 +56,9 @@
                 <p>Siga-me:</p>
 
                 <ul>
-                    <li><a href="https://github.com/eractrus"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/eractrus-de-jud%C3%A1-775393198/"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://www.instagram.com/eractrus.oliveira/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/eractrus" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/eractrus-de-jud%C3%A1-775393198/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/eractrus.oliveira/"><i class="fa-brands fa-instagram" target="_blank"></i></a></li>
                 </ul>
 
             </div><!--midias-->
@@ -66,7 +66,6 @@
 
     </section><!--Container geral-->
 
-
-
+   
 </body>
 </html>
