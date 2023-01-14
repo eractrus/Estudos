@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de repetição - While</title>
+    <style>
+        #tela{
+            height: 50px;
+            padding: 3px 5px;
+            border: none;
+            font-size: 1.5em;
+            text-align: center;
+            border-radius: 10px;
+            background-color: transparent;
+        }
+
+        .notification{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="entrada" id="entrada"><!-- entrada de respostas-->
+
+    <button onclick="entradaDeResposta()" type="submit" name="enviar">Enviar</button>
+
+    <p>Quanto é 1 + 1 ?</p> 
+
+    <input type="text" name="" id="tela" disabled>
+    <span class="notification">Seu burro !!!</span>
+
+    <script>
+
+        
+        var x = "0"
+        var r = 2
+        var rc = "Resposta Correta !"
+        var re = "Resposta Errada !"
+
+        function entradaDeResposta(){
+
+            var x = document.getElementById('entrada').value
+            document.getElementById('entrada').value = ""
+            
+
+            if(x == r){
+
+                document.getElementById('tela').value = rc
+                document.getElementById('tela').style.backgroundColor = 'green'
+                document.getElementById('tela').style.color = '#fff'
+
+                }else{
+
+                    document.getElementById('tela').value = re
+                    document.getElementById('tela').style.backgroundColor = 'red'
+                    document.getElementById('tela').style.color = '#fff'
+                }
+
+        }
+
+      
+
+  
+
+    </script>
+
+</body>
+</html>

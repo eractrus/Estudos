@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="pesquisar()">Pesquisar</button>
+    <button onclick="adicionar()">Adicionar</button>
+    <button onclick="excluir()">Excluir</button>
+
+    <script>
+        
+        var lista = Array()
+
+        lista[1] = 'banana'
+        lista[2] = 'morango'
+        lista[3] = 'Uva'
+        lista[4] = 'tomate'
+
+        console.log(lista)
+
+
+        function pesquisar(){
+
+           console.log(lista[prompt('digite um número')])
+        }
+
+        function adicionar(){
+
+           var novo = lista.push = prompt('Digite para adcionar a lista')
+           console.log(lista)
+
+
+        }
+
+        function excluir(){
+
+        var novo = lista.shift()
+        console.log(lista)
+
+
+        }
+
+        
+    </script>
+
+</body>
+</html>
