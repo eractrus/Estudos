@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+
+    <button onclick="AbrirJanela()">Abrir Janela</button>
+    <button onclick="FecharJanela()">Fechar Janela</button>
+    <button onclick="Imprimir()">Gerar Nota</button>
+
+
+    <script>
+
+        var open 
+
+        function AbrirJanela(){
+
+            // parâmentros - endereço, nome, tamanho
+            open = window.open('' , 'youtube' , 'width=500 , height=500')
+        }
+
+        function FecharJanela(){
+            open.close()
+        }
+
+        function Imprimir(){
+            window.print()
+        }
+    </script>
+</body>
+</html>

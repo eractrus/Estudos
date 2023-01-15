@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+
+        var lista_convidados = Array()
+
+        lista_convidados['t'] = 'Pedro'
+        lista_convidados[1] = 'Miguel'
+        lista_convidados['engenharia'] = 'Ana'
+        lista_convidados['produção'] = 'Maria'
+        lista_convidados[4] = 'João'
+
+        console.log(lista_convidados)
+
+        // for in - percorre o array independente do valor do indice...
+
+        for( var x = 0 in lista_convidados ){
+
+            console.log('Indicie - ' +  x  + ' - ' + lista_convidados[x])
+        }   
+    </script>
+</body>
+</html>
