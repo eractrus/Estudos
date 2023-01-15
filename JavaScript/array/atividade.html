@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="texto" placeholder="Inserir na lista">
+
+    <button onclick="recuperar()">Adicionar</button>
+    <button onclick="ordenar()">Ordenar</button>
+
+    <script>
+         
+        var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+
+        function recuperar(){// Tarefa A
+
+          var dados = document.getElementById('texto').value
+          document.getElementById('texto').value = ""
+
+          var auxiliarIndicie = objetos.indexOf(dados)
+
+
+            if(dados === ""){
+
+            alert('Informe um valor válido')
+
+            }
+
+
+            if(auxiliarIndicie == -1){
+                console.log(objetos)
+                objetos.push(dados)
+            }
+            else{
+                alert('Objeto ja inserido no indicie ' + auxiliarIndicie)
+            }
+
+        }
+
+            function ordenar(){
+                console.log(objetos.sort())
+                
+            }   
+
+
+    </script>
+
+</body>
+</html>

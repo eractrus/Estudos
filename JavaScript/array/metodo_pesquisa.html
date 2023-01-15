@@ -9,21 +9,21 @@
 <body>
     <script>
 
-            var lista_frutas = []
+        var lista_frutas = []
 
-            lista_frutas[0] = 'Banana'
-            lista_frutas[1] = 'Maçã'
-            lista_frutas[2] = 'Morango'
-            lista_frutas[3] = 'Abacaxi'
+        lista_frutas[0] = 'Banana'
+        lista_frutas[1] = 'limão'
+        lista_frutas[2] = 'Morango'
+        lista_frutas[3] = 'Uva'
 
 
-        if(lista_frutas.indexOf(prompt('Digite a fruta desejada')) === -1){
-            document.write('Produto não existe')
+       var pesquisa_indicie = lista_frutas.indexOf('Uva')
+
+        if(pesquisa_indicie === -1){
+            document.write('Conteúdo não existe')
         }else{
-            document.write('Produto disponível')
+            document.write('Conteúdo existe e está na posição ' + pesquisa_indicie)
         }
-
-            
 
     </script>
 </body>
