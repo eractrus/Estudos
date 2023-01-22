@@ -8,18 +8,13 @@
 </head>
 <body>
     <script>
+      //  setTimeout(function(){document.write('Seja bem - vindo !')}, 1000 )
+        var segundos = 60
+        setInterval(function contar(){  document.write( segundos  + '<br/>' ) - segundos-- }, 1000 )
 
-        // São laços dentro de outros laços de repetição
-
-        for( x = 1; x<=10; x++){
-
-            for( y=1; y<=10; y++){
-                document.write(x + ' x ' + y + ' = ' + (y * x) + '<br/>')
-            }
-
-            document.write('<hr/>')
-        }
-
+       
     </script>
+
+    <input type="text" id="segundos" disabled>
 </body>
-</html>
+</html> 
