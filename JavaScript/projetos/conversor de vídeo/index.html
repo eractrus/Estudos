@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de vídeos</title>
+    <style>
+        form{
+            width: 50%;
+            min-width: 500px;
+            height: 100vh;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input{
+            width: 70%;
+            height: 50px;
+            padding: 3px 10px;
+            font-size: 18px;
+            border:none;
+            border-radius: 7px 0 0 15px;
+        }
+
+        button{
+            height: 60px;
+            width: 20%;
+            font-size: 18px;
+            background-color: rgb(17, 70, 176);
+            color: #f1f1f1;
+            border:none;
+        }
+        body{
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        
+        <input type="text" name="" id="pesquisa" placeholder="Insira o código...">
+        <button onclick="pesquisarVideo()">Converter</button>
+    </form>
+    <script>
+
+
+        function pesquisarVideo(){
+
+            var entrada = document.getElementById('pesquisa').value
+
+            window.open('https://www.yout-ube.com/'+ entrada, 'nova_pesquisa', 'width=1400, height=1000')
+        }
+
+    </script>
+</body>
+</html>

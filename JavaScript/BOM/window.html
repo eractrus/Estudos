@@ -8,28 +8,28 @@
 </head>
 <body>
 
-    <button onclick="AbrirJanela()">Abrir Janela</button>
-    <button onclick="FecharJanela()">Fechar Janela</button>
-    <button onclick="Imprimir()">Gerar Nota</button>
-
+        <button onclick="AbrirJanela()">Abrir Janela</button>
+        <button onclick="FecharJanela()">Fechar Janela</button>
+        <button onclick="Imprimir()">Imprimir</button>
 
     <script>
 
-        var open 
+        var janela 
 
         function AbrirJanela(){
-
             // parâmentros - endereço, nome, tamanho
-            open = window.open('' , 'youtube' , 'width=500 , height=500')
+            janela = window.open( 'https://www.youtube.com' , 'nova_janela' , 'width=560 , height=560')
+            
         }
 
         function FecharJanela(){
-            open.close()
+            janela.close()
         }
 
         function Imprimir(){
             window.print()
         }
     </script>
+
 </body>
 </html>
