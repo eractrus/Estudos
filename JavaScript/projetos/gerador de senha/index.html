@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codigo aleatório - JavaScript</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #visor{
+            width: 100%;
+            height: 200px;
+            text-align: center;
+            font-size: 3em;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(89, 14, 159);
+            color: white;
+            border-radius: 5px;
+        }
+
+        .container-botao{
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        button{
+            background-color: rgb(89, 14, 159);
+            color: white;
+            border: none;
+            font-size: 20px;
+            height: 50px;
+            width: 150px;
+            border-radius: 5px;
+
+        }
+
+    </style>
+</head>
+<body>
+        
+    <div class="container">
+
+        <input type="text" name="" id="visor" disabled>
+
+            <div class="container-botao">
+            <button onclick="exibirSenha()">Gerar senha</button>
+            <button onclick="atualizar()">Limpar</button>
+            </div><!--Fim do container botão-->
+
+    </div><!-- Fim do container-->
+
+    <script>
+
+        var x = 1000000000// multiplicador para gerar números
+        var senha = Math.floor(Math.random() * x)// função que gera o código e arredonda
+
+
+        // função para exibir na tela
+        function exibirSenha(){
+            document.getElementById('visor').value = senha 
+        }
+
+        //função para limpar o visor
+        function atualizar(){
+            window.location.reload()
+        }
+    </script>
+</body>
+</html>
