@@ -1,4 +1,107 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url('imagens/imagens/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+#vitoria img{
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+}
+
+#fim_do_jogo{
+    background-image: url('imagens/imagens/game_over.png');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    background-color: black;
+}
+
+.btn-reiniciar{
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    background-color: #fff;
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    translate: -50%;
+    border: none;
+}
+
+.btn-reiniciar:hover{
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+
+
+/* tamanho aleatório do mosquito*/
+
 .mosquito1{
     width: 50px;
     height: 50px;
+}
+
+.mosquito2{
+    width: 70px;
+    height: 70px;
+}
+
+.mosquito3{
+    width: 100px;
+    height: 100px;
+}
+
+/* lado do mosquito */ 
+
+.ladoA{
+    transform: scalex(1);
+}
+
+.ladoB{
+    transform: scalex(-1);
+
+}
+
+/* painel */ 
+
+.painel{
+    width: 220px;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    opacity: .7;
+    background-color: #fff;
+    border-top: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.518);
+}
+
+.vidas{
+    float: left;
+}
+
+.tempo{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
 }

@@ -4,12 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Mata mosquito - JavaScript</title>
+    <title>Game Mata mosquito</title>
     <script src="logica.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body onresize="ajustedetela()">
 
-    <img src="imagens/imagens/mosca.png" class="mosquito1" alt="">
+
+    <div class="painel">
+
+        <div class="vidas">
+            <img id="v1" src="imagens/imagens/coracao_cheio.png" alt="">
+            <img id="v2" src="imagens/imagens/coracao_cheio.png" alt="">
+            <img id="v3" src="imagens/imagens/coracao_cheio.png" alt="">
+        </div><!--fim da div vidas-->
+
+        <div class="tempo">
+            Tempo restante: <span id="cronometro"></span>
+        </div><!--fim da div tempo-->
+
+    </div><!--fim da div painel-->
+
+    <script>
+
+        document.getElementById('cronometro').innerHTML = tempo
+
+            setInterval( function(){
+                posicaoRandomica()
+
+        }, 2000)
+
+    </script>
 </body>
 </html>
