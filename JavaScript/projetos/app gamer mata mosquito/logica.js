@@ -1,11 +1,29 @@
 
-// verificação de tamanho de tela
-
+//Declaração de variáveis
 var altura = 0
 var largura = 0
 var vidas = 1
-var tempo = 60
+var tempo = 20
+var criaMosquitoTempo = 1500
 
+
+// passagem do nível por url
+var nivel = window.location.search
+nivel = nivel.replace('?' , '')
+
+//lógica para nível de dificuldade
+    if(nivel === 'facil'){
+        criaMosquitoTempo = 1500
+    }
+        else if(nivel === 'intermediario'){
+            criaMosquitoTempo = 1000
+        }
+            else if(nivel === 'profissional'){
+                criaMosquitoTempo = 750
+            }
+
+
+// verificação de tamanho de tela
 function ajustedetela(){
     altura = window.innerHeight
     largura = window.innerWidth
@@ -25,8 +43,6 @@ var cronometro = setInterval(function(){
         }else{
             document.getElementById('cronometro').innerHTML = tempo
         }
-    
-    
 }, 1000)
 
 //posição aleatória para os mosquitos
@@ -55,7 +71,6 @@ function posicaoRandomica(){
 
     console.log(positionx, positiony)
 
-    //fim do calculo de posição aleatória
 
     // introduzir o elemento html (mosquito)
 
