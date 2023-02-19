@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #corpo{
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body id="corpo">
+
+    <h1>Seja Bem-Vindo !</h1>
+    <div>
+        <select name="" id="entrada_modo">
+            <option value="escuro">Escuro</option>
+            <option value="claro" selected>Claro</option>
+        </select>
+        <button onclick="testar()">Clicar</button>
+    </div>
+    <script>
+        function testar(){
+
+            modo = document.getElementById('entrada_modo').value
+
+            if(modo === 'escuro'){
+                document.getElementById('corpo').style.background = '#757780'
+                document.getElementById('corpo').style.color = '#fff'
+            }else if(modo === 'claro'){
+                document.getElementById('corpo').style.background = '#f1f1f1'
+                document.getElementById('corpo').style.color = '#000'
+
+            }
+        }
+
+        console.log(innerHeight)
+        console.log(innerWidth)
+
+    </script>
+</body>
+</html>

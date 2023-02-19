@@ -12,30 +12,111 @@
 <body>
  
                 <!--Formulário de login-->
-                <form action="">
+                <section class="form">
+                        <h1>Login </h1>
 
-                    <h1>Login </h1>
+                    <!--Entrada do nome-->
+                    <input onfocus="campoFocado('Nome focado')" onblur="campoDesfocado('Nome desfocado')" onkeyup="validarCaractere()" type="text" name="nome" id="nome" required placeholder="Digite seu login...">
 
-                <!--Entrada do nome-->
-                <input type="text" name="nome" id="nome" placeholder="Digite seu login...">
-                <!--Entrada da senha-->
-                <input type="password" name="senha" placeholder="Digite sua senha...">
-                <!--Botão de login-->
-                <button  value="Login">Entrar</button>
-                <!--Ancora esqueci minha senha-->
+                    <!--Entrada da senha-->
+                    <input onfocus="campoFocado('Senha focado')" onblur="campoDesfocado('Senha desfocado')" onkeyup="validarCaractereSenha()" type="password" name="senha" id="senha" placeholder="Digite sua senha...">
+                    <p id="mensagem_de_erro"></p>
 
-                <div class="esqueci">
-                    <a href="../Landingpage/index.html">Esqueci minha senha</a>
-                </div>
+                    <!--Botão de login-->
+                    <button onclick="validarFormulario()">Entrar</button>
+                    <!--Ancora esqueci minha senha-->
 
-                <!--Midias sociais-->   
-                <div class="midias">
-                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
+                    <div class="esqueci">
+                        <a onclick="window.location.href='recuperar.html'" href="#">Esqueci minha senha</a>
+                    </div>
 
-                </form>
+                    <!--Midias sociais-->   
+                    <div class="midias">
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                </section>
+                <script>
+
+                    let id = 'eractrus'
+                    let senha = '0123'
+
+                    function validarFormulario(){
+                        
+                        var entradaId = document.getElementById('nome').value
+                        document.getElementById('nome').value = ""
+
+                        var entradaSenha = document.getElementById('senha').value
+                        document.getElementById('senha').value = ""
+
+                        console.log(entradaId)
+                        console.log(entradaSenha)
+
+                        if( entradaId !== id || entradaSenha !== senha){
+                            document.getElementById('mensagem_de_erro').innerHTML = "Login ou senha está incorreto"
+                            document.getElementById('mensagem_de_erro').style.color = "red"
+                            document.getElementById('mensagem_de_erro').style.fontSize = "14px"
+
+                        }else{
+                            alert('Seja bem vindo ' + id)
+                            document.write('Acesso Liberado para ' + id)
+                        }
+
+                    }
+
+                    function validarCaractere(){
+
+                        var validarCaractereLogin = document.getElementById('nome').value
+
+                        if(validarCaractereLogin !== id){
+                            document.getElementById('nome').style.background = "red"
+                            document.getElementById('nome').style.color =  '#fff'
+                        }else{
+                            document.getElementById('nome').style.background = "#4f1b80"
+                            document.getElementById('nome').style.color = '#fff'
+                        }
+
+                    }
+
+                    function validarCaractereSenha(){
+
+                        var validarCaractereSenha = document.getElementById('senha').value
+
+                        if(validarCaractereSenha !== senha){
+                            document.getElementById('senha').style.background = "red"
+                            document.getElementById('senha').style.color =  '#fff'
+                        }else{
+                            document.getElementById('senha').style.background = "#4f1b80"
+                            document.getElementById('senha').style.color = '#fff'
+                        }
+                    }
+
+                    // esse código altera a cor da bordae dos campos senha e login com base no foco 
+
+                    function campoFocado(nome){
+
+                       if(nome == 'Nome focado'){
+                            document.getElementById('nome').style.borderColor = '#4f1b80'
+                       }else if(nome == 'Senha focado'){
+                        document.getElementById('senha').style.borderColor = '#4f1b80'
+                       }
+                    }
+
+                    function campoDesfocado(nome){
+
+                        if(nome == 'Nome desfocado'){
+                        document.getElementById('nome').style.borderColor = '#ccc'
+                       }else if(nome == 'Senha desfocado'){
+                        document.getElementById('senha').style.borderColor = '#ccc'
+                        }
+                    }
+
+                   
+                    
+
+                </script>
 
 </body>
 </html>
