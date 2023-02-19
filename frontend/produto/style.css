@@ -1,0 +1,264 @@
+/*reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Universal */
+
+:root{
+    --corescura:#0f0f0f;
+    --corclara:#f2f2f2;
+}
+
+.center{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Iniciando o cádigo */
+
+
+/* header */
+
+header{
+    background-color:var(--corescura);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carrinho{
+    width: 30%;
+}
+
+.carrinho a{
+    color: var(--corclara);
+    font-size: 20px;
+}
+
+.logo img{
+    height: 80px;
+}
+
+.menu{
+    display: flex;
+    gap: 40px;
+}
+.menu a{
+    text-decoration:none ;
+    color: var(--corclara);
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+
+}
+
+.menu a:hover{
+    border-bottom: 2px solid var(--corclara);
+    transition: .5s;
+    color: #f2f2f2e4;
+}
+
+
+/* main */
+
+main{
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+#main{
+    display: flex;
+}
+
+main .container-esquerda, main .container-direita{
+    width: 50%;
+    height: calc(100vh - 90px);
+}
+
+/* container lado esquerdo */
+
+main .container-esquerda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-imagens{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-imagens .imagem-principal{
+    width: 100%;
+    height: 75%;
+}
+
+.imagem-principal img, .itens img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-imagens img:hover{
+    opacity: .9;
+    cursor: pointer;
+}
+
+.card-imagens .grupo-de-imagens{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grupo-de-imagens .itens{
+    width: 33.4%;
+    height: 100%;
+}
+
+/* container lado direito */
+
+main .container-direita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.container-direita .titulo{
+    width: 90%;
+    font-size: 2em;
+    padding: 10px 0;
+}
+
+.container-direita .descricao{
+    width: 90%;
+    line-height: 24px;
+    font-size: .9em;
+    font-weight: lighter;
+}
+
+.container-direita .preco{
+    width: 90%;
+    height: 150px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.preco .preco-antigo{
+    font-size: 1.2em;
+    font-weight: 100;
+    color: #313131;
+    
+}
+
+.preco .preco-novo{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.preco .container-tamanho{
+    width: 90%;
+    height: 100px;
+}
+
+.container-tamanho ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-tamanho li{
+    list-style-type: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--corescura);
+    cursor: pointer;
+}
+
+.container-tamanho li:hover{
+    color: var(--corclara);
+    background-color: var(--corescura);
+}
+.container-direita .container-controles{
+    width: 90%;
+    height: 50px;
+    display: flex;
+}
+
+.container-controles .comprar{
+    width: 50%;
+    height: 100%;
+    background-color: #0f0f0f;
+    color: var(--corclara);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.377);
+}
+
+.container-controles .comprar:hover{
+    background-color: #232323;
+    cursor: pointer;
+}
+
+.container-controles .controles{
+    width: 50%;
+    height: 100%;
+}
+
+.controles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controles button{
+  width: 40px;
+  height: 30px;
+  background-color: var(--corclara);
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controles button:hover{
+    cursor: pointer;
+}
+
+.controles #quantidade{
+    width: 100px;
+    height: 30px;
+    border: 1px solid var(--corescura);
+    color: var(--corescura);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+
+
