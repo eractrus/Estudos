@@ -73,7 +73,7 @@
 
                 <div class="descricao">
                     <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum velit ducimus impedit iusto dolorum enim rerum nostrum consequatur vitae tenetur, nobis, veritatis architecto cumque unde alias aliquam ullam quibusdam debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla esse, rerum vero consectetur doloribus, magni modi ut similique ratione tempora adipisci maxime ducimus, fugiat quibusdam laudantium debitis! Aspernatur, totam nostrum.</p>
-                </div>
+                </div><!--Descricao-->
 
                 <div class="preco">
 
@@ -82,19 +82,20 @@
 
                     <div class="container-tamanho">
 
-                        <ul>
-                            <li>40</li>
-                            <li>42</li>
-                            <li>43</li>
-                            <li>44</li>
-                            <li>46</li>
-                        </ul>
+                        <div>
+                            <button onfocus="focado('#000','#f2f2f2', 40)" onblur="desfocado('#fff','#000', 40)" id="40" >40</button>
+
+                            <button onclick="focado('#000','#f2f2f2', 42)" onblur="desfocado('#fff','#000', 42)" value="42" id="42" >42</button>
+
+                            <button onclick="focado('#000','#f2f2f2', 43)" onblur="desfocado('#fff','#000', 43)" value="43" id="43" >43</button>
+
+                            <button onclick="focado('#000','#f2f2f2', 44)" onblur="desfocado('#fff','#000', 44)" value="44" id="44" >44</button>
+
+                            <button onclick="focado('#000','#f2f2f2', 46)" onblur="desfocado('#fff','#000', 46)" value="46" id="46" >46</button>
+                        </div>
 
                     </div><!--container-tamanho-->
                 </div><!--preco-->
-
-              
-
 
                 <div class="container-controles">
 
@@ -105,11 +106,20 @@
                         <p id="quantidade"></p>
                         <button onclick="aumentarQuantidade()">+</button>
                     </div>
+
+                </div><!--container controles-->
+
+                <div class="controles2">
+                    <button class="btn-adicionar">Adicionar <i class="fa-solid fa-cart-shopping"></i> </button>
+
+                    <button class="btn-favorito">Favoritos <i class="fa-solid fa-heart"></i> </button>
                 </div>
 
+                <div class="descricao">
+                    <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, quae voluptates, recusandae, ut libero itaque ipsa distinctio a perferendis temporibus modi odio impedit velit eos! Excepturi ab fuga dolorum inventore.</p>
+                </div>
             </div><!--Direita-->
-
-        </section>
+        </section><!--Center / main-->
     </main>
 
     <script>
@@ -141,8 +151,65 @@
 
         // Essa seção altera o foco do tamanho do item
 
-        function Focado(){
+        function focado(fundo, letra, valor){
             
+            if(valor == 40) {
+                    document.getElementById('40').style.background = fundo
+                    document.getElementById('40').style.color = letra
+            }else if(valor == 42){
+                    document.getElementById('42').style.background = fundo
+                    document.getElementById('42').style.color = letra
+            }else if(valor == 43){
+                    document.getElementById('43').style.background = fundo
+                    document.getElementById('43').style.color = letra
+            }else if(valor == 44){
+                    document.getElementById('44').style.background = fundo
+                    document.getElementById('44').style.color = letra
+            }else if(valor == 46){
+                    document.getElementById('46').style.background = fundo
+                    document.getElementById('46').style.color = letra
+            }
+        }
+
+        function desfocado(fundo, letra, valor){
+            
+            if(valor == 40) {
+                    document.getElementById('40').style.background = fundo
+                    document.getElementById('40').style.color = letra
+            }else if(valor == 42){
+                    document.getElementById('42').style.background = fundo
+                    document.getElementById('42').style.color = letra
+            }else if(valor == 43){
+                    document.getElementById('43').style.background = fundo
+                    document.getElementById('43').style.color = letra
+            }else if(valor == 44){
+                    document.getElementById('44').style.background = fundo
+                    document.getElementById('44').style.color = letra
+            }else if(valor == 46){
+                    document.getElementById('46').style.background = fundo
+                    document.getElementById('46').style.color = letra
+            }
+        }
+
+        
+        function hover(fundo, letra, valor){
+            
+            if(valor == 40) {
+                    document.getElementById('40').style.background = fundo
+                    document.getElementById('40').style.color = letra
+            }else if(valor == 42){
+                    document.getElementById('42').style.background = fundo
+                    document.getElementById('42').style.color = letra
+            }else if(valor == 43){
+                    document.getElementById('43').style.background = fundo
+                    document.getElementById('43').style.color = letra
+            }else if(valor == 44){
+                    document.getElementById('44').style.background = fundo
+                    document.getElementById('44').style.color = letra
+            }else if(valor == 46){
+                    document.getElementById('46').style.background = fundo
+                    document.getElementById('46').style.color = letra
+            }
         }
     </script>
     

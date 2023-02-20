@@ -58,12 +58,12 @@ header{
     text-decoration:none ;
     color: var(--corclara);
     padding-bottom: 5px;
-    border-bottom: 2px solid transparent;
+    border-bottom: 4px solid transparent;
 
 }
 
 .menu a:hover{
-    border-bottom: 2px solid var(--corclara);
+    border-bottom: 3px solid var(--corclara);
     transition: .5s;
     color: #f2f2f2e4;
 }
@@ -178,22 +178,23 @@ main .container-direita{
     height: 100px;
 }
 
-.container-tamanho ul{
+.container-tamanho div{
     height: 100%;
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.container-tamanho li{
+.container-tamanho button{
     list-style-type: none;
-    padding: 8px;
+    padding: 12px;
     border-radius: 5px;
     border: 1px solid var(--corescura);
     cursor: pointer;
+    background-color: #fff;
 }
 
-.container-tamanho li:hover{
+.container-tamanho button:hover{
     color: var(--corclara);
     background-color: var(--corescura);
 }
@@ -258,6 +259,25 @@ main .container-direita{
     justify-content: center;
     align-items: center;
     font-size: 1.1em;
+}
+
+.controles2{
+    width: 90%;
+    height: 100px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btn-adicionar, .btn-favorito{
+    width: 50%;
+    height: 50px;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 
