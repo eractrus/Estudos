@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --corClara:#dcdcdc;
+    --corAzul:#2E5EAA;
+    --corAmarela:#F9DC5C;
+}
+
+.center{
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.linha{
+    width: 90%;
+    border-bottom: 1px solid rgba(64, 64, 64, 0.493);
+    margin: 0 auto;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
+header{
+    width: 100%;
+    height: 130px;
+    background-color:var(--corAzul);
+}
+
+#header-superior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    height: 75px;
+}
+
+#header-superior .container-logo{
+    color: var(--corClara);
+}
+
+#header-superior .container-pesquisa{
+    min-width: 400px;
+    width: 40%;
+    height: 40px;
+}
+
+.container-pesquisa fieldset{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 0 0 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+fieldset input{
+    width: 88%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-right: 1px solid #ccc;
+    background-color: transparent;
+    font-size: 1.1em;
+    color: #272727;
+}
+
+fieldset i{
+    cursor: pointer;
+}
+
+#header-superior .container-user{
+    width: 200px ;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#carrinho-modal{
+    width: 350px;
+    height: 60vh;
+    position: absolute;
+    background-color: #ffffff38;
+    backdrop-filter:blur(50px) ;
+    z-index: 1;
+    top: 65px;
+    right: 50px;
+    display: none;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.568);
+}
+
+.carrinho-bloco{
+    width: 100%;
+    height: 50px;
+}
+
+.carrinho-bloco button{
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--corAzul);
+    color: var(--corClara);
+    border: none;
+    border-radius: 0 0 12px 12px;
+}
+
+.carrinho-bloco button:hover{
+    cursor: pointer;
+    background-color: #1b3969;
+    transition: .5s;
+}
+
+.carrinho-bloco2{
+    height: calc(100% - 110px);
+    overflow: auto;
+}
+
+.container-user ul{
+    display: flex;
+    gap: 20px;
+}
+
+.container-user li{
+    list-style-type: none;
+    font-size: 25px;
+}
+
+.container-user a{
+    color: var(--corClara);
+    font-weight: bold;
+}
+
+.container-user a:hover{
+    color: #fff;
+}
+
+.container-user .btn-entrar{
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+
+#header-inferior{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#header-inferior .container-suporte{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--corClara);
+
+}
+
+.container-suporte i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#header-inferior ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-weight: bold;
+}
+
+#header-inferior button{
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--corClara);
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 3px solid transparent;
+    background-color: transparent;
+}
+
+/* main */ 
+
+main .slide{
+    width: 100%;
+    height: 4
+    50vh;
+    display: flex;
+}
+
+.slide .moldura{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.container-img{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    animation-name: slide;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.container-img img{
+    width: 1535px;
+    height: 400px;
+}
+
+@keyframes slide{
+
+    0%{
+        right: 0px;
+    }
+    30%{
+        right: 1535px;
+    }
+
+    60%{
+        
+        right: 3070px;
+    }
+
+    100%{
+       
+        right: 4605px;
+    }
+
+    
+}
+
+main #container-pagamentos{
+    height: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#container-pagamentos .bloco{
+    width: 24.8%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.bloco .titulo-card{
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.bloco .sub-titulo{
+    padding: 10px 20px;
+    color: #474646;
+    font-weight: lighter;
+}
+
+
+

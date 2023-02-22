@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/da841ddc6b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <section id="header-superior" class="center">
+
+            <div class="container-logo">
+                <h1>LOGOMARCA</h1>
+            </div>
+
+            <div class="container-pesquisa">
+
+                <fieldset>
+
+                    <input type="text" name="" id="pesquisar">
+                    <label for="pesquisar"><i class="fa-solid fa-magnifying-glass"></i></label>
+                    
+                </fieldset>
+                
+            </div><!--container pesquisar-->
+
+            <div class="container-user">
+
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-user"></i></a>
+                    </li>
+                    <li >
+                        <a   onblur="esconderCarrinho()" 
+                        onfocus="mostrarCarrinho()" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+                        <div id="carrinho-modal">
+                            <div class="carrinho-bloco"></div>
+                            <div class="carrinho-bloco2"></div>
+                            <div class="carrinho-bloco">
+                                <button>Finalizar</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                    <a href="../login/index.html" class="btn-entrar">Entrar</a>
+                
+            </div><!--container user-->
+
+        </section><!--header superior-->
+
+        <div class="linha"></div>
+        
+        <section id="header-inferior" class="center">
+
+            <div class="container-suporte">
+                <span>Suporte</span> <i class="fa-brands fa-rocketchat"></i>             
+            </div>
+
+            <ul>
+                <button>Categorias <i class="fa-solid fa-caret-down"></i></button>
+
+                <button id="oferta" onfocus="focar('oferta', '#F9DC5C')" onblur="desfocar('oferta', '#dcdcdc')">Ofertas do dia</button>
+
+                <button id="bebidas" onfocus="focar('bebidas', '#F9DC5C')" onblur="desfocar('bebidas', '#dcdcdc')">Bebidas</button>
+
+                <button id="moda" onfocus="focar('moda', '#F9DC5C')" onblur="desfocar('moda', '#dcdcdc')">Moda</button>
+
+                <button id="esporte" onfocus="focar('esporte', '#F9DC5C')" onblur="desfocar('esporte', '#dcdcdc')">Esporte</button>
+
+                <button id="tecnologia" onfocus="focar('tecnologia', '#F9DC5C')" onblur="desfocar('tecnologia', '#dcdcdc')">Tecnologia</button>
+                
+                <button>Saber <i class="fa-solid fa-caret-down"></i></button>
+            </ul>
+
+        </section><!--header inferior-->
+    </header>
+
+
+    <main>
+        <section class="slide">
+            <div class="moldura">
+                <div class="container-img">
+                    <img class="card-img" src="imagens/1.jpg" alt="">
+                </div>
+        
+                <div class="container-img">
+                    <img class="card-img" src="imagens/2.jpg" alt="">
+                </div>
+        
+                <div class="container-img"> 
+                    <img class="card-img" src="imagens/3.jpg" alt="">
+                </div>
+        
+                <div class="container-img"> 
+                    <img class="card-img" src="imagens/4.jfif" alt="">
+                </div>
+            </div>
+        </section><!-- slide-->
+
+        <div id="container-pagamentos" class="center">
+
+            <div class="bloco">
+                <p class="titulo-card">Pagamento Seguro <i class="fa-regular fa-credit-card"></i></p> 
+                <p class="sub-titulo">Page Seguro</p>
+            </div>
+
+            <div class="bloco">
+                <p class="titulo-card">Parcele em até 12x <i class="fa-regular fa-credit-card"></i></p> 
+                <p class="sub-titulo">Cartão de crédito</p>
+            </div>
+
+            <div class="bloco">
+                <p class="titulo-card">Diversidade no pagamento</p> 
+                <p class="sub-titulo">Pix, Crédito, Boleto</p>
+            </div>
+
+            <div class="bloco">
+                <p class="titulo-card">Envio Seguro <i class="fa-solid fa-circle-check"></i></p> 
+                <p class="sub-titulo">Frota privada</p>
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+    <script src="js.js"></script>
+    
+    
+</body>
+</html>
