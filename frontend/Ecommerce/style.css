@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: arial,  sans-serif;
 }
 
 :root{
@@ -270,6 +270,91 @@ main #container-pagamentos{
     padding: 10px 20px;
     color: #474646;
     font-weight: lighter;
+}
+
+main .containerMaisVendidos{
+    width: 100%;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerMaisVendidos #container-card{
+    height: 90%;
+}
+
+.titulo{
+    font-size: 1.3em;
+    padding: 10px 12px;
+    font-weight: bold;
+    color: #474646;
+    width: 100%;
+    height: 40px;
+}
+
+#container-card .container-card-produtos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-card-produtos .card{
+    height: 340px;
+    width: 280px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.card .img-card{
+    width: 100%;
+    height: 55%;
+    background-color: #474646;
+}
+
+.img-card img{
+    width: 100%;
+    height: 100%;
+}
+
+.card .texto-card{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px ;
+}
+
+.texto-card div{
+    text-align: center;
+}
+
+.card .titulo-card-produto{
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.card .descricao{
+    font-size: .85em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container-card-produtos .container-preco{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.container-preco .preco{
+    font-size: 1.3em;
+}
+
+.container-preco i{
+    font-size: 28px;
 }
 
 

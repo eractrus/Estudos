@@ -6,8 +6,8 @@ let nome = 'Jorge'
 
 //console.log(`7 + 7 = ${7 + 7}`)
 
-function calcularMultiplicacao(x, y){
-    return x * y
+function calcularMultiplicacao(nome){
+    return nome
 }
 
-console.log(`O resultado da muktiplicação dos valores é ${calcularMultiplicacao(3,5)}`)
+console.log(` ${calcularMultiplicacao('Eractrus')}`)
