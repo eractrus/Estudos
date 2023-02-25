@@ -19,7 +19,7 @@
     margin: 0 auto;
 }
 
-/* Iniciando o cádigo */
+/* Iniciando o código */
 
 
 /* header */
@@ -29,6 +29,7 @@ header{
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #header{
@@ -37,14 +38,94 @@ header{
     align-items: center;
 }
 
+.btnHamburguer i{
+    color: var(--corclara);
+    font-size: 25px;
+    display: none;
+}
+
 .carrinho{
     width: 30%;
 }
 
-.carrinho a{
+.carrinho i{
     color: var(--corclara);
     font-size: 20px;
+    cursor: pointer;
 }
+
+ #header #containerCarrinho{
+    width: auto;
+    height: auto;
+    background-color: #ffffff67;
+    position: absolute;
+    top: 60px;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.418);
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+
+#containerCarrinho #btnFinalizarCompra{
+    background-color: darkorange;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.418);
+    font-size: 18px;
+    font-weight: bold;
+    display: none;
+    margin-top: 10px;
+    color: var(--corclara);
+    cursor: pointer;
+}
+
+#containerCarrinho #btnFinalizarCompra:hover{
+    background-color: rgb(186, 102, 0);
+}
+
+#containerCarrinho #cardCarrinho{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #0f0f0f3d;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.418);
+    display: none;
+}
+
+#cardCarrinho div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+#cardCarrinho img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px 0 0 10px;
+}
+
+#cardCarrinho h4{
+    font-size: 25px;
+    color: var(--corclara);
+}
+
+#cardCarrinho p{
+    padding-top: 10px;
+    color: var(--corclara);
+    font-size: 18px;
+}
+
 
 .logo img{
     height: 80px;
@@ -78,6 +159,7 @@ main{
 
 #main{
     display: flex;
+    align-items: center;
 }
 
 main .container-esquerda, main .container-direita{
@@ -91,6 +173,7 @@ main .container-esquerda{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 400px;
 }
 
 .card-imagens{
@@ -132,10 +215,12 @@ main .container-esquerda{
 /* container lado direito */
 
 main .container-direita{
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
+    min-width: 600px;
+
 }
 
 .container-direita .titulo{

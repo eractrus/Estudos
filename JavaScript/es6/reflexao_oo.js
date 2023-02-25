@@ -30,5 +30,4 @@ class Cadeira{
         cadeiras.push(new Cadeira( 4, true, 'preta'))
 
     console.log(cadeiras)
-  
 

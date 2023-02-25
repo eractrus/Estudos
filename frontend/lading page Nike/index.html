@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
     <script src="https://kit.fontawesome.com/da841ddc6b.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -13,24 +14,48 @@
     <header>
 
         <div id="header" class="center">
-
-            <div class="carrinho">
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <!--Botão carrinho-->
+            <div  class="carrinho">
+                <i   onmouseenter="abrirContainerCarro()" onclick="fecharContainerCarro()"
+                  class="fa-solid fa-cart-shopping"></i>
             </div>
+
+            <!--Container carrinho-->
+            <div  id="containerCarrinho">
+
+                <div id="cardCarrinho">
+
+                    <img id="imgCardCarrinho" src="#" alt="">
+
+                    <div>
+                        <h4 id="tituloCardCarrinho"></h4>
+                        <p id="precoCardCarrinho"></p>
+                    </div>
+
+                </div><!--card carrinho-->
+
+                <button id="btnFinalizarCompra">Finalizar compra</button>
+            </div><!--container carrinho-->
+
 
             <div class="logo">
                 <img src="https://pngimage.net/wp-content/uploads/2018/06/nike-png-branco-1.png" alt="logo da Nike">
             </div>
 
-            <nav class="menu">
+            <nav id="menu" class="menu">
                 <a href="#">Home</a>
                 <a href="#">Men</a>
                 <a href="#">Women</a>
                 <a href="#">Kids</a>
                 <a href="#">Acessories</a>
             </nav><!--Menu-->
+
         </div><!--Center-->
         
+        <div class="btnHamburguer">
+            <i ondblclick="esconderMenuResponsivo()" onclick="mostrarMenuResponsivo()" class="fa-solid fa-bars"></i>
+        </div>
+
     </header>
 
 
@@ -41,22 +66,22 @@
 
                 <div class="card-imagens">
 
-                    <div class="imagem-principal">
-                        <img src="https://photos.enjoei.com.br/tenis-nike-air-jordan-branco-e-azul-n-40/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy8xNDU3NjY1MS81YWFkZTQzZjA5ODc1NjcxOTNhZTIzZWJlNmFjODk5Mi5qcGc" alt="Tenis nike jordan masculino">
+                    <div  class="imagem-principal">
+                        <img id="imagemPrincipal" src="imagens/tenis4.webp">
                     </div><!--Imagem principal-->
 
                     <div class="grupo-de-imagens">
 
                         <div class="itens">
-                            <img src="https://cf.shopee.ph/file/912545c2d44f6f57b7d3aa08177d9d9c_tn" alt="">
+                            <img onclick="InserirImagem('imagens/tenis1.jpg')" src="imagens/tenis1.jpg" alt="">
                         </div>
 
                         <div class="itens">
-                            <img src="https://th.bing.com/th/id/OIP.Hu9suS4hzG2-XrG3_Ze-7QHaE8?pid=ImgDet&rs=1" alt="">
+                            <img onclick="InserirImagem('imagens/tenis2.jfif')" src="imagens/tenis2.jfif" alt="">
                         </div>
 
                         <div class="itens">
-                            <img src="https://preview.redd.it/hpulrl28vht51.jpg?width=960&crop=smart&auto=webp&s=a25c916b7c27b54b2fb835c0482897c0ed3e8aad" alt="">
+                            <img onclick="InserirImagem('imagens/tenis4.webp')" src="imagens/tenis4.webp" alt="">
                         </div>
 
                     </div><!--Grupo de imagens-->
@@ -110,13 +135,13 @@
                 </div><!--container controles-->
 
                 <div class="controles2">
-                    <button class="btn-adicionar">Adicionar <i class="fa-solid fa-cart-shopping"></i> </button>
+                    <button onclick="adicionarCarrinho('imagens/tenis4.webp', 'Nike Air Jordan', 'R$ 698,68')" class="btn-adicionar">Adicionar <i class="fa-solid fa-cart-shopping"></i> </button>
 
                     <button class="btn-favorito">Favoritos <i class="fa-solid fa-heart"></i> </button>
                 </div>
 
                 <div class="descricao">
-                    <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, quae voluptates, recusandae, ut libero itaque ipsa distinctio a perferendis temporibus modi odio impedit velit eos! Excepturi ab fuga dolorum inventore.</p>
+                    <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, quae voluptates, recusandae, ut libero itaque ipsa distinctio a perferendis temporibus </p>
                 </div>
             </div><!--Direita-->
         </section><!--Center / main-->
@@ -211,6 +236,47 @@
                     document.getElementById('46').style.color = letra
             }
         }
+
+        // altera as imagens ao clicar
+
+        function InserirImagem(url) {
+            
+            document.getElementById('imagemPrincipal').src = url;
+    }
+
+    // mostrar container carrinho
+
+    function abrirContainerCarro(){
+        document.getElementById('containerCarrinho').style.display = 'block'
+   
+    }
+
+    function fecharContainerCarro(){
+        document.getElementById('containerCarrinho').style.display = 'none'
+    }
+
+
+    // função adicionar ao carrionho
+
+    function adicionarCarrinho(url,titulo,preco){
+
+        document.getElementById('imgCardCarrinho').src = url
+        document.getElementById('tituloCardCarrinho').innerHTML = titulo
+        document.getElementById('precoCardCarrinho').innerHTML = preco
+        document.getElementById('containerCarrinho').style.display = 'block'
+        document.getElementById('cardCarrinho').style.display = 'flex'
+        document.getElementById('btnFinalizarCompra').style.display = 'block'
+    }
+
+    // mostrar menu responsivo
+
+    function mostrarMenuResponsivo(){
+        document.getElementById('menu').style.display = 'flex'
+    }
+
+    function esconderMenuResponsivo(){
+        document.getElementById('menu').style.display = 'none'
+    }
     </script>
     
 </body>
