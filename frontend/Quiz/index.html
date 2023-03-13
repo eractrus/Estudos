@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="logica.js"></script>
+</head>
+<body>
+
+    <section class="containerGeral">
+
+        <div class="containerQuestao">
+
+            <div class="containerTexto">
+                <div id="titulo">Questão:1</div>
+
+                <div id="questao">Quanto é 1 + 1321 ?</div>
+        
+            </div><!--Container Texto-->
+
+            <div class="containerCard">
+
+                <button onblur="desfocarAlternativa('card1','#ccc')" onfocus="focoAlternativa('card1', 'green')" id="card1" class="Card">
+
+                </button>
+
+                
+                <button onblur="desfocarAlternativa('card2','#ccc')" onfocus="focoAlternativa('card2', 'green')" id="card2" class="Card">
+
+                </button>
+
+                
+                <button onblur="desfocarAlternativa('card3','#ccc')" onfocus="focoAlternativa('card3', 'green')" id="card3" class="Card">
+
+                </button>
+
+                
+                <button onblur="desfocarAlternativa('card4','#ccc')" onfocus="focoAlternativa('card4', 'green')" id="card4" class="Card">
+
+                </button>
+
+            </div><!--Container Card-->
+
+           
+        
+        </div><!--Container Questão-->
+
+        <div class="containerControles">
+
+            <div class="containercontroleQuestao">
+                <button  id="botao1" onclick="trocarQuestao('Questão: 1','Quanto é 1 + 1321 ?', 'botao1', 'red')">Questão: 1</button>
+
+                <button id="botao2" onclick="trocarQuestao('Questão: 2','Quanto é 1 + 1 + 2 ?','botao2','red')">Questão: 2</button>
+
+                <button id="botao3" onclick="trocarQuestao('Questão: 3','Quanto é 1 + 1 ?','botao3','red')">Questão: 3</button>
+
+                <button id="botao4" onclick="trocarQuestao('Questão: 4','Quanto é 1 + 13 ?','botao4','red')">Questão: 4</button>
+
+                <button id="botao5" onclick="trocarQuestao('Questão: 5','Quanto é 1 + 150 ?','botao5','red')">Questão: 5</button>
+
+                <button id="botao6" onclick="trocarQuestao('Questão: 6','Quanto é 1 + 45 ?','botao6','red')">Questão: 6</button>
+
+                <button id="botao7" onclick="trocarQuestao('Questão: 7','Quanto é 1 + 6 ?','botao7','red')">Questão: 7</button>
+
+                <button id="botao8" onclick="trocarQuestao('Questão: 8','Quanto é 1 + 7 ?','botao8','red')">Questão: 8</button>
+
+                <button id="botao9" onclick="trocarQuestao('Questão: 9','Quanto é 1 + 10 ?','botao9','red')">Questão: 9</button>
+
+                <button id="botao10" onclick="trocarQuestao('Questão: 10','Quanto é 1 + 5 ?','botao10','red')">Questão: 10</button>
+            </div>
+
+            <div class="containerFinalizar">
+
+                <button>Finalizar Prova</button>
+
+            </div>
+        </div><!--Container controles-->
+        
+    </section><!--Container Geral-->
+    
+</body>
+</html>
