@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array multidimensional</title>
+</head>
+<body>
+    <script>
+        // podemos encadear no indíce dos Array's outros Array's, formando outras listas para atender nossas necessidades
+
+        var lista_coisas = Array()
+        
+        lista_coisas['frutas'] = Array()
+        lista_coisas['pessoas'] = Array()
+
+        lista_coisas['frutas'][0] = ''
+        lista_coisas['frutas'][1] = 'Banana'
+        lista_coisas['frutas'][2] = 'Maçã'
+        lista_coisas['frutas'][3] = 'Limão'
+        lista_coisas['frutas'][4] = 'Uva'
+
+        lista_coisas['pessoas'][0] = ''
+        lista_coisas['pessoas'][1] = 'Eractrus'
+        lista_coisas['pessoas'][2] = 'Marcia'
+        lista_coisas['pessoas'][3] = 'João'
+        lista_coisas['pessoas'][4] = 'Maria'
+
+        document.write(lista_coisas['pessoas'][prompt('Um número')])
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+
+/* sista personalizada 
+
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+li{
+    padding: 10px 20px;
+    background-image: url('imagens/arquivos-necessarios-barra-navegacao-vertical/seta.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+
+}
+
+*/
+
+/* menu vertical */ 
+
+ul{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    width: 200px;
+    height: 40px;
+    background-image: url('imagens/arquivos-necessarios-barra-navegacao-vertical/menu.png');
+    background-position: left center ;
+    margin: 2px;
+
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    line-height: 40px;
+    padding-left: 40px;
+    
+}
+
+li:hover{
+
+    background-position: right center;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método de pesquisa</title>
+</head>
+<body>
+    <script>
+
+        var lista_frutas = []
+
+        lista_frutas[0] = 'Banana'
+        lista_frutas[1] = 'limão'
+        lista_frutas[2] = 'Morango'
+        lista_frutas[3] = 'Uva'
+
+
+       var pesquisa_indicie = lista_frutas.indexOf('Uva')
+
+        if(pesquisa_indicie === -1){
+            document.write('Conteúdo não existe')
+        }else{
+            document.write('Conteúdo existe e está na posição ' + pesquisa_indicie)
+        }
+
+    </script>
+</body>
+</html>

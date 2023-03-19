@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+   <form action="">
+
+        <div class="form-group">
+            <label for="usuario">usuario</label>
+            <input class="form-control" type="text" name="usuario" id="usuario" placeholder="Digite seu usuário">
+        </div>
+
+
+        <div class="form-group">
+            <label for="email">email</label>
+            <input class="form-control" type="email" name="email" id="email" placeholder="Digite seu email" >
+            <small class="fomr-text">E-mail será validado</small>
+        </div>
+
+
+        <div class="form-group">
+            <label for="estados">Estados</label>
+            <select class="form-control" name="estados" id="estados">
+
+                <option value="Acre">Acre</option>
+                <option value="Alagoas">Alagoas</option>
+                <option value="Minas gerais">Minas Gerais</option>
+                <option value="Rio de janeiro">Rio de Janeiro</option>
+                <option value="São Paulo">São Paulo</option>
+
+            </select>
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="descricao">Descrição</label>
+            <textarea class="form-control" name="" id="descricao" cols="30" rows="4"></textarea>
+            
+        </div>
+
+        <div class="form-group">
+            <label for="arquivo">Arquivo</label>
+            <input class="form-control-file" type="file" name="arquivo" id="arquivo">
+        </div>
+
+        <div class="custom-file">
+
+            <input class="custom-file-input" type="file" name="arquivo" id="arquivo">
+            <label class="custom-file-label" for="arquivo">Arquivo</label>
+
+        </div>
+
+<br><br>
+
+        <div class="form-group">
+
+            <label for="satisfacao">Satisfação</label>
+            <input class="custom-range" type="range" name="satisfacao" id="satisfacao" min="1"  max="5">
+
+
+        </div>
+
+        <button class="btn btn-warning" type="submit" value="Salvar">Salvar</button>
+
+
+
+   </form>
+    
+</body>
+</html>
