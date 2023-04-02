@@ -30,8 +30,8 @@
 
 # função input(). é um tipo de entrada de dados, uma espécie de canal de passagem de dados. OBS: a função input() NÃO ARMAZENA VALORES.
 
-nome = input("Digite seu nome: ")
-print(nome)
+#nome = input("Digite seu nome: ")
+#print(nome)
 
 
 # variedades em imprir textos na tela 
@@ -39,3 +39,4 @@ print(nome)
 #podemos usar formatadores de caracteres ( igual na limguagem C)
 # podemos usar a função format()
 # Podemos criar uma estring formatada 
+

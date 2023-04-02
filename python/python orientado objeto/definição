@@ -1,0 +1,12 @@
+Definições importantes
+Antes de aprendermos como criar uma classe em Python vamos conhecer os conceitos de objeto, classe e instância.
+
+ Objetos
+São os componentes de um programa OO. Um programa que usa a tecnologia OO é basicamente uma coleção de objetos. 
+
+ Classe
+Uma classe é um modelo para um objeto. 
+Segundo a Python Software Fundation (PSF, 2020a), podemos considerar uma classe como uma forma de organizar os dados (de um objeto) e seus comportamentos.
+
+ Instância
+Entende-se por instância a existência física, em memória, do objeto.
