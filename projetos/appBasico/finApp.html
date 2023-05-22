@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="containerGeral">
+
+        <div class="containerResultado">
+
+            <div class=" box telaReceita">
+                <p class="titulo">Receita</p>
+                <p class="valorReceita valor">0,00</p>
+            </div>
+
+            <div class=" box telaDispesa">
+                <p class="titulo">Dispesa</p>
+                <p class="valorDispesa valor">0,00</p>
+            </div>
+
+            <div class=" box telaDiferenca">
+                <p class="titulo">Diferença</p>
+                <p class="valorDiferenca valor">0,00</p>
+            </div>
+
+        </div>
+
+        <div class="containerEntrada">
+
+            <input type="text" id="entrada" placeholder="Insira o valor desejado">
+
+            <select name="" id="tipo">
+                <option value="receita">Receita</option>
+                <option value="dispesa">Dispesa</option>
+            </select>
+
+            <button onclick="cadastrar()">Cadastrar</button>
+        </div>
+
+        <div class="mensagem">
+        </div>
+    </div>
+
+    <script src="AppFin.js"></script>
+</body>
+
+</html>

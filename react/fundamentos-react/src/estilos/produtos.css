@@ -1,0 +1,13 @@
+.tabela{
+    width: 100%;
+}
+
+.tabela thead{
+    background-color: rgb(17, 122, 125);
+    color: #fff;
+    padding: 15px;
+}
+
+.par{
+    background-color: #ccc;
+}
