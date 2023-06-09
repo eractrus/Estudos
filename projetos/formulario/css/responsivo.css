@@ -1,0 +1,14 @@
+
+
+@media (max-width: 767px) { 
+
+    .containerForm{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .containerRigth{
+        display: none;
+    }
+
+}
+
