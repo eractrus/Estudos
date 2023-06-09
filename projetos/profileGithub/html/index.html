@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body>
+
+    <div class="containerSearch">
+        <input type="text" id="dataUser" required placeholder="Enter the GitHub user">
+        <button onclick="getUsers()">Search</button>
+    </div>
+
+    <div class="card">
+        <section class="containerImage">
+            <img id="avatarUser" src="" alt="">
+        </section>
+
+        <section class="containerInfo">
+
+            <p id="user"></p>
+            <p id="userLocation"></p>
+            <p id="userBio"></p>
+            <p id="userRepository"></p>
+
+        </section>
+    </div>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

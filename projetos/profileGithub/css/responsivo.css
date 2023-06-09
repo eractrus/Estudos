@@ -1,0 +1,31 @@
+@media(max-width: 676px) {
+    .containerSearch {
+        width: 100%;
+        height: auto;
+        margin: 40px 0;
+        position: relative;
+        top: 0;    
+    }
+
+    .card {
+        width: 80%;
+        flex-wrap: wrap;
+        border-radius: 30px;
+    }
+
+    .containerImage {
+        width: 100%;
+        border-radius: 30px;
+
+    }
+
+    #avatarUser {
+        border-radius: 30px 30px 0 0;
+    }
+
+    .containerInfo {
+        width: 100%;
+        padding: 25px  15px;
+    }
+
+}
