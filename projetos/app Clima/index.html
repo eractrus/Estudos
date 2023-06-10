@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Clima</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/da841ddc6b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <section class="containerSearch">
+            <input type="text" id="search" required placeholder="Digite: País, Estado, Cidade">
+            <button onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </section>
+
+        <section class="blockOne">
+
+            <h1 id="nameSearch"></h1>
+            <h2 id="description"></h2>
+
+            <div class="containerIcon">
+                <img src="" alt="">
+                <p id="icon"></p>
+            </div>
+
+        </section>
+
+        <section class="containerCard">
+
+            <div class="card">
+
+                <div class="max">
+                    <span class="title">Max:</span>
+                    <p id="tempMax"></p>
+                </div>
+
+                <div class="min">
+                    <span class="title">Min:</span>
+                    <p id="tempMin"></p>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="temperatura">
+                    <span class="title">Temperatura</span>
+                    <h1 id="temp"></h1>
+                </div>
+
+                <div class="humidade">
+                    <span class="title">Humidade</span>
+                    <p id="humidity"></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="title">Vento</span>
+                <h1 id="speed"></h1>
+            </div>
+
+        </section>
+
+
+    </div>
+    <script src="js/clima.js"></script>
+</body>
+
+</html>
