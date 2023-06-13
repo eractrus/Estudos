@@ -1,0 +1,21 @@
+.containerCheck{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerCheck > div{
+    display: flex;
+    align-items: center;
+}
+
+.containerCheck div > label{
+    padding: 0;
+    margin-left: .5rem;
+}
+
+a:hover{
+    color: #0080ff;
+}
+

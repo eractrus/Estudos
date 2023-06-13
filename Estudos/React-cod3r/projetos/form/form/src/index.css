@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box  ;
+    font-family: sans-serif;
+    color: var(--corFont);
+}
+
+:root{
+    --corFundo:#020202;
+    --corFont:#fff;
+    --corDestaque:#0080ff;
+
+}
+
+body{
+    background-color: var(--corFundo);
+}
+
+form{
+    width: 25%;
+    min-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+label{
+    font-size: .9rem;
+    padding-bottom: 5px;
+}
+
+.inputBloco{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    height: 40px;
+    padding: 5px 15px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    color: var(--corFundo);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
