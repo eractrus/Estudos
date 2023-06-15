@@ -1,16 +1,11 @@
+import './style.css'
 import React from "react"
 import ReactDOM from "react-dom"
-// css
-import './style.css'
 
-// import component
-import Primeiro from './compornets/basic/Primeiro'
-
+import App from "./compornets/App"
 const root = document.querySelector('#root')
 
 ReactDOM.render(
-    <div>
-        <Primeiro />
-    </div>
+    <App />
     , root
 )

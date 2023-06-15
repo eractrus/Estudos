@@ -1,0 +1,30 @@
+.card {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid darkcyan;
+}
+.card .containerTitle {
+  width: 100%;
+  height: 50px;
+  background-color: darkcyan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .containerTitle .titleCard {
+  color: #f1f1f1;
+}
+.card .containerContent {
+  width: 100%;
+  min-height: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .containerContent .content {
+  color: #f1f1f1;
+}/*# sourceMappingURL=card.css.map */
