@@ -3,11 +3,16 @@ import './card.css'
 
 export default (props) => {
 
+    const cardExercise = {
+        backgroundColor: props.color || 'darkcyan',
+        borderColor: props.color || 'darkcyan',
+    }
+
     return (
 
-        <div className="card">
+        <div className="card" style={cardExercise} >
 
-            <div className="containerTitle">
+            <div className="containerTitle" >
                 <h2 className="titleCard">{props.titleCard}</h2>
             </div>
 
