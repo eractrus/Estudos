@@ -1,0 +1,14 @@
+.containerTable th{
+    background-color: blueviolet;
+    padding: 10px;
+}
+
+.containerTable td{
+    text-align: center;
+    padding: 5px;
+}
+
+.dark{
+    background-color: #f1f1f1;
+    color: black;
+}
