@@ -1,0 +1,21 @@
+.Menu {
+  display: flex;
+  flex-basis: 250px;
+  background-color: deepskyblue;
+}
+.Menu nav {
+  flex: 1;
+}
+.Menu nav li {
+  display: flex;
+}
+.Menu nav li a {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-bottom: 10px;
+  flex: 1;
+}
+.Menu nav li a:hover {
+  background-color: rgba(0, 0, 0, 0.1019607843);
+}/*# sourceMappingURL=Header.css.map */

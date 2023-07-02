@@ -20,8 +20,6 @@ export default () =>{
             <input type="text" value={valor} onChange={mostrarValor} />
             <input type="text" value={valor} readOnly />
             <input type="text" value={undefined}  />
-
-
         </div>
     )
 }

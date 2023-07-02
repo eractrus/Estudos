@@ -1,0 +1,19 @@
+.containerMegaSena{
+    display: flex;
+    flex-direction: column;
+}
+
+.btnMegaSena{
+    padding: 5px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: navy;
+    color: yellow;
+    opacity: .9;
+}
+
+.btnMegaSena:hover{
+    opacity: 1;
+}

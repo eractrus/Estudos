@@ -1,0 +1,21 @@
+.containerContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.containerContact ul {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+.containerContact ul i {
+  font-size: 1.8rem;
+  color: var(--corDestaque2);
+  transition: all 0.4s ease-in-out;
+}
+.containerContact ul i:hover {
+  transition: all 0.4s ease-in-out;
+  transform: translatey(-10px);
+}/*# sourceMappingURL=Contact.css.map */

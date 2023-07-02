@@ -5,19 +5,24 @@ export default () => {
 
     const [value, setValor] = useState(0)
 
-    const dec = (e) => {
-        setValor(e.target.value -= 1)
-    }
-
-    const incr = (e) => {
-        setValor(e.target.value += 1 )
+    const contagem = (e, type) => {
+     
+        if (type == 'dec') {
+            
+            setValor(value - 1)
+        } else {
+            setValor(value + 1)
+        }
     }
 
     return (
-        <div>
-            <button onClick={dec} className="btnIncr">-</button>
+
+        <div className="containerContador">
+            <button onClick={e => contagem(e, 'dec')} className="btnIncr">-</button>
+
             <input className="contador" value={value} type="text" disabled />
-            <button onClick={incr} className="btnIncr">+</button>
+
+            <button onClick={e => contagem(e, 'incr')} className="btnIncr">+</button>
         </div>
     )
 }

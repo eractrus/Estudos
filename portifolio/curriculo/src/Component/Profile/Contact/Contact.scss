@@ -1,0 +1,25 @@
+.containerContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    ul{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+
+        i{
+            font-size: 1.8rem;
+            color:  var(--corDestaque2);
+            transition: all .4s ease-in-out;
+
+        }
+
+        i:hover{
+            transition: all .4s ease-in-out;
+            transform: translatey(-10px);
+        }
+    }
+}

@@ -12,6 +12,7 @@ import Pai from "./comunicação/Direta/Pai";
 import PaiInd from "./comunicação/Indireta/Pai";
 import Input from "./Formulário/input";
 import Display from "./contador/display";
+import Mega from "./MegaSena/Mega";
 
 import Card from './card/card'
 
@@ -24,7 +25,11 @@ export default () => {
 
             <div className="containerCard">
 
-                <Card titleCard='#10 - Componente controlado' color={'blueviolet'} >
+                <Card titleCard='#12 - MegaSena' color={'blueviolet'} >
+                    <Mega />
+                </Card>
+
+                <Card titleCard='#11 - Contador' color={'blueviolet'} >
                     <Display></Display>
                 </Card>
 
