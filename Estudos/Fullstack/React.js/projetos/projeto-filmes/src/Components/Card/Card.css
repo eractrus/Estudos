@@ -1,0 +1,51 @@
+.card {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h2 {
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.card .nota {
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.card .containerBtnCard {
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+.card .containerBtnCard a {
+    width: 49%;
+    height: 50px;
+    font-size: 1.3rem;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: .4s all ease;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 4px;
+}
+
+.card .containerBtnCard a:hover {
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #000;
+    transition: .4s all ease;
+}

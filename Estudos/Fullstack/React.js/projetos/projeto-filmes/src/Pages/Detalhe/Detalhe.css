@@ -1,0 +1,65 @@
+.containerPaginaDetalhe {
+    width: 90%;
+    height: calc(100vh - 70px);
+    margin: 0 auto;
+    display: flex;
+    padding: 20px;
+}
+
+.containerPaginaDetalhe .containerImage {
+    width: 50%;
+    height: 100%;
+}
+
+.containerPaginaDetalhe .containerImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.134);
+}
+
+.containerPaginaDetalhe .containerInfo {
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+}
+
+.subContainer {
+    width: 100%;
+}
+
+.subContainer h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.subContainer p {
+    line-height: 1.8rem;
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+.subContainer2 {
+    display: flex;
+    gap: 2rem;
+    padding: 20px 0;
+}
+
+.containerInfo nav{
+    display: flex;
+    gap: .5rem;
+    align-items: stretch;
+}
+
+.containerInfo nav a,
+.containerInfo nav button {
+    background-color: black;
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 4px;
+}

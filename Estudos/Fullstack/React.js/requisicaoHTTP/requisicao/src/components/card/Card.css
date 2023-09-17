@@ -1,0 +1,41 @@
+.card{
+    width: 350px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;    border-radius: 4px;
+    align-items: stretch;
+}
+
+.containerTexto{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #fff;
+
+}
+
+.card h3, .card h2 {
+    background-color: transparent;
+}
+
+
+
+button{
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #537a05;
+    font-size: 20px;
+    font-weight: bold;
+    color: #537a05;
+    transition: .4s all ease;
+    border-radius: 4px;
+
+}
+
+button:hover{
+    background-color: #537a05;
+    color: #fff;
+    transition: .4s all ease;
+}
