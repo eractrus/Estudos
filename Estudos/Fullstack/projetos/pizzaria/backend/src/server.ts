@@ -2,6 +2,7 @@
 import express, { Request, Response, NextFunction } from "express";
 import 'express-async-errors'
 import cors from "cors"
+import path from "path";
 import { router } from "./routes";
 
 // Instâncias
@@ -11,6 +12,8 @@ server.use(cors())
 
 //Rotas
 server.use(router)
+
+server.use('/files', express.static(path.resolve(__dirname, '..', 'tmp')))
 
 //Midleware de tratamento de erros: todas as rotas passaram por uma verificação de erro 
 server.use((err: Error, req: Request, res: Response, next: NextFunction) => {

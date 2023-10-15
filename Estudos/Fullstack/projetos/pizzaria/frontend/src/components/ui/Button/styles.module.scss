@@ -1,0 +1,36 @@
+.button {
+    max-width: 600px;
+    background-color: var(--red-900);
+    border: 0;
+    border-radius: .5rem;
+    padding: .4rem;
+    color: var(--branco);
+    transition: all .4s ease-in-out;
+
+    &[disabled] {
+        cursor: not-allowed;
+
+        svg {
+            animation: spinner 1.5s infinite;
+        }
+    }
+
+    &:hover {
+        filter: brightness(1.1);
+        transition: all .4s ease-in-out;
+    }
+}
+
+.textButton {
+    color: var(--branco)
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

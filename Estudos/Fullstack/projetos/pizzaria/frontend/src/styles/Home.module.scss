@@ -1,0 +1,38 @@
+.containerCenter{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login{
+    margin-top: 2rem;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   justify-content: center;
+   padding: 2rem 1.5rem;
+
+   form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+   }
+
+   .text{
+    color: var(--branco);
+   }
+}
+
+@media (max-width: 720px){
+    .login{
+        width: 100%;
+
+        form{
+            width: 80%;
+        }
+    }
+}
